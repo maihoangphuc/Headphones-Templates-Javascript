@@ -1,0 +1,196 @@
+:root{
+    /*màu nền div trái*/
+    --left-bg-color: #fff;
+    /*màu nền div phải*/
+    --right-bg-color: rgba(199, 191, 191, 0.089);
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+}
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*============================ div tổng ============================*/
+.wishlist-warpper{
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 40px 50px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-transform: uppercase;
+    color: var(--text-normal-color);
+    font-size: 16px;
+    font-weight: 550;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+.wishlist-item-1{
+    border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+.wishlist-item-2{
+    border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+/*============================ xóa sản phẩm ============================*/
+.product-remove{
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*============================ ảnh sản phẩm ============================*/
+
+.product-thumb{
+    width: 140px;
+    height: 140px;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+}
+
+.product-img img{
+    width: 80%;
+}
+
+/*============================ tên sản phẩm và giá ============================*/
+.product-name,
+.amount{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-normal-color)
+}
+
+/*============================ giá ============================*/
+.product-price{
+    text-align: center;
+}
+
+/*============================ chi tiết ============================*/
+
+.detail-warpper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-warpper button{
+    background-color: #fff;
+    color: var(--text-normal-color);
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(231, 225, 225);
+}
+
+.detail-warpper button:hover{
+    background-color: var(--button-bg-color-hover);
+    color: #fff;
+}
+
+
+/*============================ tổng giá ============================*/
+.product-subtotal{
+    text-align: center;
+}
+
+
+
+/*============================ button dưới ============================*/
+.button-bottom-warpper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/*nút tiếp tục mua sắm*/
+.gotoback-shop button{
+    text-transform: uppercase;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+.gotoback-shop button:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+
+/*nút xóa tất cả*/
+.clear-product button{
+    text-transform: uppercase;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+.clear-product button:hover{
+    background-color: var(--button-bg-color-hover);
+}

@@ -1,0 +1,211 @@
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*============================ news warpper ============================*/
+.news-warpper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 50px;
+}
+
+.news{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.news-top {
+    height: auto;
+    overflow: hidden;
+}
+
+.news-top img{
+    width: 100%;
+    transition: transform .6s ease;
+}
+
+.news-top img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.news-bottom{
+    height: auto;
+    padding: 25px 30px;
+    position: relative;
+}
+
+.comment{
+    cursor: pointer;
+}
+
+.comment:hover{
+    color: rgb(68, 120, 197);
+}
+
+.small-title{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-normal-color);
+}
+
+.big-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-big-color);
+    margin-top: 10px;
+}
+
+.normal-title{
+    font-size: 14px;
+    color: var(--text-normal-color);
+    margin-top: 18px;
+}
+
+/*============================ đọc thêm và chia sẻ ============================*/
+.readmore-share-warpper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.read-more-title{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-big-color);
+    cursor: pointer;
+}
+
+.share-title{
+    font-size: 15px;
+    color: var(--text-normal-color);
+    margin-right: 10px;
+}
+
+.share-social{
+    display: flex;
+    align-items: center;
+}
+
+.social-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.social-icon i{
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.social-icon i:nth-child(1){
+    background-color: rgb(65, 140, 190);
+    transition: 0.5s;
+}
+
+.social-icon i:nth-child(2){
+    background-color: rgb(118, 198, 245);
+    transition: 0.5s;
+}
+
+.social-icon i:nth-child(3){
+    background-color: rgb(137, 111, 179);
+    transition: 0.5s;
+}
+
+.social-icon i:nth-child(1):hover{
+    background-color: rgb(81, 93, 100);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.social-icon i:nth-child(2):hover{
+    background-color: rgb(81, 93, 100);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.social-icon i:nth-child(3):hover{
+    background-color: rgb(81, 93, 100);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+/*============================ phân trang ============================*/
+.pagination{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+   
+.pagination a.active {
+    background-color: #719fca;
+    color: white;
+}
+   
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

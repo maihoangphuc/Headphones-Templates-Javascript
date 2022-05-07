@@ -1,0 +1,246 @@
+:root{
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+}
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+/*============================ signin warpper ============================*/
+.signin-warpper{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.signin-title{
+    color: var(--text-normal-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*============================ phần trên ============================*/
+.signin-top{
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+}
+
+.signin-top p{
+    color: var(--text-normal-color);
+    margin-right: 15px;
+}
+
+.signin-top i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #545454;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.signin-top .signin-sosial i:hover {
+    color: rgb(124, 143, 206);
+}
+
+.border-bottom-signin{
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+}
+
+/*============================ phần giữa ============================*/
+.signin-mid{
+    margin-top: 10px;
+}
+
+/*signin mid p*/
+.signin-mid p{
+    color: var(--text-normal-color);
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/*signin mid email*/
+
+
+/*email i*/
+.email i,
+.password i{
+    border-right: 1px solid #e7e7e7;
+    width: 10%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.email,
+.password{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+}
+
+.email{
+    margin-bottom: 12px;
+}
+
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px 20px;
+    border: 0;
+    outline: none;
+}
+
+/*============================ phần dưới ============================*/
+.signin-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--text-normal-color);
+    font-size: 15px;
+}
+
+/*============================ nhớ tài khoản ============================*/
+
+/*div chứa checkbox và label*/
+.signin-bottom .checkbox-lable-warpper{
+    display: flex;
+    align-items: center;
+}
+
+/*checkbox*/
+.signin-bottom .checkbox-lable-warpper .checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 192, 192);
+    cursor: pointer;
+}
+
+/*label*/
+.signin-bottom .checkbox-lable-warpper label{
+    font-size: 15px;
+    color: var(--text-normal-color);
+    cursor: pointer;
+}
+
+/*thêm icon tick vào sau checkbox*/
+.signin-bottom .checkbox-lable-warpper .checkbox::after{
+    content: '\f00c';
+    margin-left: 2px;
+    margin-top: 2px;
+    font-size: 10px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+/*checkbox khi click*/
+.signin-bottom .checkbox-lable-warpper .checkbox:checked::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+/*============================ quay lại đăng ký & nút đăng nhập ============================*/
+/*div chứa quay lại dn và nút submit*/
+.signup-btnSignin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-signup{
+    color: var(--text-normal-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.back-signup::before{
+    content: '\f177';
+    margin-right: 5px;
+    font-family: FontAwesome;
+}
+
+
+/*============================ nút đăng nhập ============================*/
+.btn-signin button{
+    border: none;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding: 8px 16px;
+    float: right;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-signin button:hover{
+    background-color: var(--button-bg-color-hover);
+}

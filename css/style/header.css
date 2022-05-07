@@ -1,0 +1,650 @@
+:root {
+    /*bg color*/
+    --header-warpper-color: #272b36;
+    --bg-body-color:#f8f9fa;
+    /*devided*/
+    --devided-color:#999;
+    --dropdown-hover-li-color:rgba(128, 161, 223, 0.753);
+    /*border bottom header*/
+    --border-bottom-header-color:rgba(255,255,255,0.2);
+    /*menu*/
+    --menu-li-color:rgb(231, 216, 216);
+    --menu-hover-li-color:rgba(128, 161, 223, 0.753);
+    --border-hover-li-color:#fff;
+    /*bg search*/
+    --bg-search-color:rgb(222, 230, 238);
+    --search-i-color:#999;
+    --search-hover-i-color:rgba(128, 161, 223, 0.753);
+    /*user*/
+    --user-color:rgb(231, 216, 216);
+    --user-hover-i-color:rgba(128, 161, 223, 0.753);
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+}
+
+/*================== dính đầu trang khi kéo ==================*/
+.sticky + main {
+    padding-top: 102px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*================== chọn tất cả ==================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*================== phần thân ==================*/
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    background-color: var(--bg-body-color);
+}
+
+/*================== thẻ a ==================*/
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+}
+
+/*================== thẻ li ==================*/
+li {
+    list-style-type: none;
+}
+
+/*================== container (chứa) ==================*/
+
+/*độ rộng 80%*/
+.container-80 {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+/*độ rộng 60%*/
+.container-60 {
+    width: 100%;
+    max-width: 60%;
+    margin: auto;
+}
+
+/*================== header warpper ==================*/
+.top-header-warpper,
+.bottom-header-warpper,
+.mobile-header-warpper,
+.mobile-header-menu-warpper{
+    background-color: var(--header-warpper-color);
+}
+
+/*================== top header ==================*/
+.top-header {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header ul {
+    display: flex;
+}
+
+.top-header a {
+    font-size: 13px;
+}
+
+/*================== devided ==================*/
+ul.devided > li {
+    color: var(--devided-color);
+}
+
+/*Cách li đầu tiên về bên phải 10px*/
+ul.devided > li:first-child {
+    padding-right: 10px;
+}
+
+/*Cách li cuối cùng về bên trái 10px*/
+ul.devided > li:last-child {
+  padding-left: 10px;
+}
+
+/*border |*/
+ul.devided > li:first-child::after{
+    content: "";
+    margin-left: 10px;
+    position: absolute;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    height: 15px;
+    margin-top: 5px;
+}
+
+/*================== dropdown money & language ==================*/
+/* dropdown money & dropdown language */
+.dropdown-money,
+.dropdown-language {
+    position: relative;
+}
+
+.dropdown-money:hover .dropdown-content-money,
+.dropdown-language:hover .dropdown-content-language{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content-money,
+.dropdown-content-language {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 5;
+}
+
+.dropdown-content-money{
+    margin-top: 7px;
+    margin-left: -50px;
+}
+
+.dropdown-content-language {
+    margin-top: 7px;
+    margin-left: -30px;
+}
+
+.dropdown-content-money li a,
+.dropdown-content-language li a {
+    padding: 3px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--devided-color)
+}
+
+.dropdown-content-money li a:hover,
+.dropdown-content-language li a:hover {
+    color: var(--dropdown-hover-li-color);
+}
+
+/*================== dropdown cart ==================*/
+/* dropdown login */
+.dropdown-cart {
+    position: relative;
+}
+
+.dropdown-cart:hover .dropdown-content-cart {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content-cart {
+    width: 310px;
+    height: 420px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 5;
+    margin-left: -260px;
+    margin-top: 25px;
+    padding: 20px 30px;
+}
+
+/*chọn tất cả thẻ a*/
+.product-content-warpper > a{
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--text-big-color);
+}
+
+.product-content-warpper > a:hover{
+    color: var(--dropdown-hover-li-color);
+}
+
+/*chọn các thẻ p*/
+.product-content-warpper > p{
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-normal-color);
+}
+
+/*chọn thẻ p đầu tiên*/
+.product-content-warpper p:nth-child(2){
+    margin-top: 10px;
+}
+
+/*cart warpper*/
+.cart-warpper{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    border-bottom: 1px solid rgb(227, 224, 230);
+    padding-bottom: 20px;
+}
+
+/*icon xóa*/
+.icon-close{
+    margin-top: 3px;
+    margin-left: 5px;
+    font-size: 15px;
+    color: var(--text-normal-color);
+}
+
+
+/*div chứa ảnh*/
+.cart-img-warpper{
+    cursor: pointer;
+    background-color: rgb(228, 234, 236);
+    width: 90px;
+    height: 100px;
+    position: relative;
+}
+
+/*ảnh*/
+.cart-img-warpper img{
+    width: 80%;
+    height: 60%;
+    margin-top: 3px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+/*nội dung sản phẩm*/
+.product-content-warpper{
+    margin-left: 20px;
+}
+
+/*chọn li 2*/
+.dropdown-content-cart li:nth-child(2){
+    margin-top: 20px;
+}
+
+/*tổng giá*/
+.total-price-warpper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--text-big-color);
+}
+
+.view-checkout-warpper{
+    position: relative;
+    width: 100%;
+}
+
+.view-cart button,
+.checkout-cart button{
+    border: none;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--button-bg-color);
+    color: rgb(255, 255, 255);
+}
+
+.view-cart button:hover,
+.checkout-cart button:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+.checkout-cart button{
+    margin-top: -10px;
+}
+
+
+
+/*================== dropdown login ==================*/
+/* dropdown login */
+.dropdown-login {
+    position: relative;
+}
+
+.dropdown-login:hover .dropdown-content-login {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content-login {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 5;
+    margin-left: -70px;
+    margin-top: 25px;
+}
+
+.dropdown-content-login li a {
+    padding: 3px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--devided-color)
+}
+
+.dropdown-content-login li a:hover {
+    color: var(--dropdown-hover-li-color);
+}
+
+/*================== border bottom header ==================*/
+.border-bottom-header{
+    margin: auto;
+    border-bottom: 1px solid var(--border-bottom-header-color);
+    width: 80%;
+    margin-top: 5px;
+}
+
+/*================== bottom header ==================*/
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/*================== logo ==================*/
+.logo {
+    width: 150px;
+}
+
+/*================== menu warpper ==================*/
+.menu-warpper {
+    display: flex;
+}
+
+.menu-warpper > li > a{
+    color: var(--menu-li-color);
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    font-weight: 600;
+    height: 100%;
+    font-size: 16px;
+    text-transform:capitalize;
+}
+
+.menu-warpper > li > a:hover {
+    color: var(--menu-hover-li-color);
+    border-bottom: 1px solid var(--border-hover-li-color);
+}
+
+/*font awesome icon cuahang*/
+.icon-dropdown-menu::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+/*================== dropdown mega menu ==================*/
+/* dropdown mega menu */
+.dropdown-mega-menu {
+    position: relative;
+}
+
+.dropdown-mega-menu:hover .dropdown-content-mega-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content-mega-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr 1fr;
+    width: 1095px;
+    height: 360px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--bg-body-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 5;
+    margin-left: -317px;
+    margin-top: 27px;
+    padding: 20px 40px;
+}
+
+.menu-title {
+    font-size: 16px;
+    color: var(--text-big-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: unset;
+}
+
+.border-bottom-menu-title{
+    border-bottom: 3px solid var(--text-big-color);
+    width: 40px;
+    height: 0.5px;
+    margin-bottom: 20px;
+}
+
+.item-menu li a{
+    color: var(--text-normal-color);
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.item-menu li a:hover {
+    color: var(--dropdown-hover-li-color);
+}
+
+.border-right-mega-menu{
+    border-right: 1px solid #e0dcdc;
+    margin-right: 20px;
+}
+
+/*img trong mega menu*/
+.mega-menu-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mega-menu-img img{
+    width: 300px;
+    cursor: pointer;
+}
+
+/*================== form tìm kiếm ==================*/
+.search {
+    width: 230px;
+    height: 40px;
+    position: relative;
+}
+
+.search input[type="search"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    outline: 0;
+    padding: 0 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--bg-search-color);
+}
+
+.search i{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: var(--search-i-color);
+}
+
+.search i:hover {
+    color:var(--search-hover-i-color);
+}
+  
+/*================== user ==================*/
+.user {
+    display: flex;
+    color: var(--user-color);
+}
+
+.user > li > a {
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+.user i:hover {
+    color:var(--user-hover-i-color);
+    cursor: pointer;
+}
+
+/*================== mobile header warpper ==================*/
+.mobile-header-warpper {
+    display: none; /*ẩn*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.mobile-header-icon{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.mobile-header-icon-bars{
+    cursor: pointer;
+    display: none; /*ẩn*/
+    color: #fff;
+}
+
+.mobile-header-icon-search{
+    color: #fff;
+    right: 0;
+    margin-right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/*================== mobile header menu warpper ==================*/
+.mobile-header-menu-warpper {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    position: fixed;
+    z-index: 9999;
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-header-menu-warpper.active {
+    right: 0;
+}
+
+.logo-iconclose-warpper{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.mobile-header-menu-icon-close {
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+/*================== menu trên điện thoại ==================*/
+.mobile-menu-warpper{
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-menu ul{
+    margin-top: 100px;
+}
+
+.mobile-menu ul li{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mobile-menu ul li a{
+    color: rgba(255, 255, 255, 0.829);
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+.mobile-menu ul li a:hover{
+    transition: 0.2s;
+    background-color: rgb(122, 144, 192);
+}
+
+.border-bottom-warpper{
+    display: flex;
+    justify-content: center;
+}
+
+.border-bottom-menu-mobile{
+    width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.829);
+}
+
+.icon-warpper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-warpper i{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.829);
+    margin: 0px 10px;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.icon-warpper i:hover{
+    color: rgb(94, 126, 196);
+    transform: scale(1.4);
+    transition: 0.2s;
+}

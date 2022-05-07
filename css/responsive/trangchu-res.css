@@ -1,0 +1,740 @@
+/*pc*/
+@media only screen and (min-width: 1367px) {
+
+}
+
+
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    /*================== slider ==================*/
+    .slider-warpper{
+        height: 500px;
+    }
+    
+    .slider-container {
+        height: 500px;
+        display: flex;
+        align-items: start;
+    }
+
+    .slider-item-left{
+        height: 500px;
+        width: 65%;
+    }
+
+    .slider-item-right{
+        height: 500px;
+        width: 35%;
+    }
+
+    .text-sub {
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+        margin-bottom: 5px;
+        margin-left: 7px;
+        padding-bottom: 6px;
+    }
+
+    .text-big {
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+    .text-normal {
+        width: 90%;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        line-height: 25px;
+        
+    }
+
+    .slider-content {
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .buy{
+        font-size: 14px;
+        padding: 5px;
+        margin: unset;
+    }
+
+    .text-background {
+        display: none;
+    }
+
+    .slider-navi {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .slider-navi a {
+        margin: 5px;
+        height: 6px;
+        width: 18px;
+    }
+
+    .slider-img {
+        width: 25%;
+        margin-top: 85px;
+        margin-right: 45px;
+    }
+
+    /* Animate-START point */
+    .slider-container.animate--start .slider-img {
+        transform: translate3d(0,-100px,0);
+    }
+    
+    /* Animate-END point */
+    .slider-container.animate--end .slider-img {
+        transform: translate3d(0,100px,0);
+    }
+
+    /*slider sony*/
+    .slider-sony .slider-item-left {
+        background: #c2a789;
+    }
+    
+    .slider-sony .slider-item-right {
+        background: #4e4755;
+    }
+    
+    /*slider jbl*/
+    .slider-jbl .slider-item-left {
+        background: #66839e;
+    }
+    
+    .slider-jbl .slider-item-right {
+        background: #f4ecc5;
+    }
+
+    /*================== product ==================*/
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .product:last-child{
+        display: none;
+    }
+
+    /*tiêu đề sp khuyến mãi*/
+    .product-promotion-title{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    .product-promotion-title::before{
+        width: 75px;
+        height: 2px;
+        margin-top: 40px;
+        margin-left: 110px;
+    }
+
+    /*================== khu vực hỗ trợ ==================*/
+    .suppoer-area-warpper{
+        padding: 20px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    /*================== container ==================*/
+    .container-80{
+        max-width: 90%;
+    }
+
+    .container-60{
+        max-width: 80%;
+    }
+
+    /*ẩn header*/
+    .top-header-warpper,
+    .bottom-header-warpper,
+    .border-bottom-header{
+        display: none;
+    }
+  
+    /*hiện*/
+    .mobile-header-warpper,
+    .mobile-header-menu-warpper,
+    .mobile-header-icon-bars,
+    .mobile-header-menu-icon-close {
+        display: block;
+        display: flex;
+    }
+
+    .mobile-header-warpper{
+        padding: 20px 20px;
+    }
+
+    .mobile-header-icon-bars{
+        font-size: 17px;
+    }
+
+    .mobile-header-icon-search{
+        font-size: 17px;
+    }
+
+    .mobile-header-menu-icon-close {
+        font-size: 20px;
+    }
+
+    .mobile-header-menu-logo{
+        width: 150px;
+    }
+
+    .mobile-menu li a{
+        font-size: 20px;
+    }
+
+    /*================== slider ==================*/
+    .slider-warpper{
+        height: 400px;
+    }
+    
+    .slider-container {
+        height: 400px;
+        display: flex;
+        align-items: start;
+    }
+
+    .slider-item-left{
+        height: 400px;
+        width: 65%;
+    }
+
+    .slider-item-right{
+        height: 400px;
+        width: 35%;
+    }
+
+    .text-sub {
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+        margin-bottom: 5px;
+        margin-left: 7px;
+        padding-bottom: 6px;
+    }
+
+    .text-big {
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+    .text-normal {
+        width: 90%;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        line-height: 25px;
+    }
+
+    .slider-content {
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .buy{
+        font-size: 14px;
+        padding: 5px;
+        margin: unset;
+    }
+
+    .text-background {
+        display: none;
+    }
+
+    .slider-navi {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .slider-navi a {
+        margin: 5px;
+        height: 6px;
+        width: 18px;
+    }
+
+    .slider-img {
+        width: 25%;
+        margin-top: 85px;
+        margin-right: 45px;
+    }
+
+    /* Animate-START point */
+    .slider-container.animate--start .slider-img {
+        transform: translate3d(0,-100px,0);
+    }
+    
+    /* Animate-END point */
+    .slider-container.animate--end .slider-img {
+        transform: translate3d(0,100px,0);
+    }
+
+    /*slider sony*/
+    .slider-sony .slider-item-left {
+        background: #6a5d75;
+    }
+    
+    .slider-sony .slider-item-right {
+        background: #a7bcbb;
+    }
+    
+    /*slider apple*/
+    .slider-apple .slider-item-left {
+        background: #66839e;
+    }
+    
+    .slider-apple .slider-item-right {
+        background: #f4ecc5;
+    }
+
+    /*================== footer ==================*/
+    footer .footer-warpper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: unset;
+        grid-column-gap: 220px;
+        grid-row-gap: 30px;
+    }
+
+    /*bordor footer h2*/
+    footer .sec h2::before{
+        top: 30px;
+        height: 1.5px;
+    }
+
+    /*footer h2*/
+    footer .sec h2{
+        font-weight: 450;
+        font-size: 19px;
+    }
+
+    /*footer p*/
+    footer .sec p{
+        font-size: 15px;
+    }
+
+    /*quicklinks*/
+    .quicklinks{
+        font-size: 15px;
+    }
+
+    /*sci*/
+    .sci li a{
+        width: 41px;
+        height: 41px;
+        font-size: 16px;
+    }
+
+    /*info icon*/
+    .info i{
+        font-size: 15px;
+    }
+
+    /*================== coppyright ==================*/
+    .coppyright{
+        font-size: 14px;
+    }
+
+    /*================== product title ==================*/
+    .product-title-warpper .product-title{
+        font-size: 24px;
+    }
+
+    /*================== border bottom prodict title ==================*/
+    .product-title-warpper .border-bottom-product-title{
+        width: 90px;
+    }
+
+    /*================== timer sale ==================*/
+    .timer{
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    /*================== product ==================*/
+    .product-items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    /*tiêu đề sp khuyến mãi*/
+    .product-promotion-title{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    .product-promotion-title::before{
+        width: 75px;
+        height: 2px;
+        margin-top: 40px;
+        margin-left: 110px;
+    }
+
+    /*================== ảnh banner ==================*/
+    .banner-warpper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .banner-1{
+        display: none;
+    } 
+   
+
+    /*================== khu vực hỗ trợ ==================*/
+    .suppoer-area-warpper{
+        padding: 20px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 35px;
+    }
+
+    .suppoer-area:last-child{
+        display: none;
+    }
+  
+}
+
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+    /*================== slider ==================*/
+    .slider-warpper{
+        height: 400px;
+    }
+    
+    .slider-container {
+        height: 400px;
+        display: flex;
+        align-items: start;
+    }
+
+    .slider-item-left{
+        height: 400px;
+        width: 100%; 
+    }
+
+    .slider-item-right{
+        display: none;
+    }
+
+    .text-sub {
+        font-size: 10px;
+        letter-spacing: 0.2rem;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+
+    .text-big {
+        font-size: 55px;
+        font-weight: 500;
+    }
+
+    .text-normal {
+        width: 80%;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 23px;
+    }
+
+    .slider-content {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .buy{
+        font-size: 14px;
+        padding: 5px;
+        margin: unset;
+    }
+
+    .text-background {
+        display: none;
+    }
+
+    .slider-navi {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .slider-navi a {
+        margin: 5px;
+        height: 6px;
+        width: 18px;
+    }
+
+    .slider-img {
+        width: 25%;
+        margin-top: 85px;
+        margin-right: 20px;
+    }
+
+    .slider-sony .slider-item-left {
+        background: #8772a3;
+    }
+
+    .slider-jbl .slider-item-left {
+        background: #7e8682;
+    }
+
+    .slider-apple .slider-item-left {
+        background: #c58fc1;
+    }
+
+    /* Animate-START point */
+    .slider-container.animate--start .slider-img {
+        transform: translate3d(0,-100px,0);
+    }
+    
+    /* Animate-END point */
+    .slider-container.animate--end .slider-img {
+        transform: translate3d(0,100px,0);
+    }
+    
+
+    /*================== product title ==================*/
+    .product-title-warpper .product-title{
+        font-size: 20px;
+    }
+
+    /*================== border bottom prodict title ==================*/
+    .product-title-warpper .border-bottom-product-title{
+        width: 70px;
+    }
+
+    /*================== timer sale ==================*/
+    .timer{
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    /*================== product ==================*/
+    .product-items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    /*tiêu đề sp khuyến mãi*/
+    .product-promotion-title{
+        font-weight: 550;
+        font-size: 18px;
+    }
+    
+    .product-promotion-title::before{
+        width: 65px;
+        height: 2px;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    /*================== ảnh banner ==================*/
+    .banner-warpper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .banner-2{
+        display: none;
+    } 
+
+    /*================== khu vực hỗ trợ ==================*/
+    .suppoer-area-warpper{
+        padding: 20px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 35px;
+    }
+
+    .suppoer-area{
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+
+    /*================== slider ==================*/
+    .slider-warpper{
+        height: 400px;
+    }
+    
+    .slider-container {
+        height: 400px;
+        display: flex;
+        align-items: start;
+    }
+
+    .slider-item-left{
+        height: 400px;
+        width: 100%; 
+    }
+
+    .slider-item-right{
+        display: none;
+    }
+
+    .text-sub {
+        font-size: 10px;
+        letter-spacing: 0.2rem;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+
+    .text-big {
+        font-size: 55px;
+        font-weight: 500;
+    }
+
+    .text-normal {
+        width: 80%;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 23px;
+    }
+
+    .slider-content {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .buy{
+        font-size: 14px;
+        padding: 5px;
+        margin: unset;
+    }
+
+    .text-background {
+        display: none;
+    }
+
+    .slider-navi {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .slider-navi a {
+        margin: 5px;
+        height: 6px;
+        width: 18px;
+    }
+
+    .slider-img {
+        width: 25%;
+        margin-top: 85px;
+        margin-right: 20px;
+    }
+
+    .slider-sony .slider-item-left {
+        background: #4c8d72;
+    }
+
+    .slider-jbl .slider-item-left {
+        background: #8772a3;
+    }
+
+    .slider-apple .slider-item-left {
+        background: #777f88;
+    }
+
+    /* Animate-START point */
+    .slider-container.animate--start .slider-img {
+        transform: translate3d(0,-100px,0);
+    }
+    
+    /* Animate-END point */
+    .slider-container.animate--end .slider-img {
+        transform: translate3d(0,100px,0);
+    }
+    
+
+    /*================== product title ==================*/
+    .product-title-warpper .product-title{
+        font-size: 20px;
+    }
+
+    /*================== border bottom prodict title ==================*/
+    .product-title-warpper .border-bottom-product-title{
+        width: 70px;
+    }
+
+    /*================== timer sale ==================*/
+    .timer{
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    /*================== product ==================*/
+    .product-items{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    /*tiêu đề sp khuyến mãi*/
+    .product-promotion-title{
+        font-weight: 550;
+        font-size: 18px;
+    }
+    
+    .product-promotion-title::before{
+        width: 65px;
+        height: 2px;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    /*================== ảnh banner ==================*/
+    .banner-warpper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .banner-2{
+        display: none;
+    } 
+
+    /*================== khu vực hỗ trợ ==================*/
+    .suppoer-area-warpper{
+        padding: 20px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 35px;
+    }
+
+    .suppoer-area{
+        justify-content: center;
+    }
+
+}
+
+
+
+/*mobile nhỏ (iphone 6/7/8) trở xuống*/
+@media only screen and (max-width: 376px) {
+
+
+}

@@ -1,0 +1,580 @@
+/*pc*/
+@media only screen and (min-width: 1367px) {
+
+}
+
+
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    /*============================ div tổng ============================*/
+    .detail-product-warpper{
+        grid-column-gap: 40px;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        grid-template-columns: 1fr;
+        height: 570px;
+    }
+
+    /*============================ div chứa ảnh ============================*/
+    .img-warpper{
+        height: 465px;
+    }
+
+    /*============================ div chứa ảnh nhỏ ============================*/
+    .small-img-warpper{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        margin-left: unset;
+        margin-top: 15px;
+    }
+
+    .small-img{
+        height: 125px;
+    }
+    
+    .small-img img{
+        width: 80px;
+    }
+
+    .small-img:nth-child(1):before{
+        content: '\f104';
+        font-size: 23px;
+        top:unset;
+        left: 0;
+        margin-left: 5px;
+    }
+    
+    .small-img:nth-child(4)::after{
+        content: '\f105';
+        font-size: 23px;
+        bottom: unset;
+        right: 0;
+        margin-right: 5px;
+    }
+}
+
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*============================ div tổng ============================*/
+    .detail-product-warpper{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+
+    /*ảnh sp*/
+    .img-warpper img{
+        width: 60%;
+    }
+
+    /*ảnh nhỏ*/
+    .small-img img{
+        width: 100px;
+    }
+
+    /*======================== mạng xã hội =========================*/
+    .socials{
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    /*======================== tab =========================*/
+    .tab{
+        margin-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    /*buttton*/
+    .tab button {
+        margin-right: 20px;
+    }
+
+    .tab .tablinks{
+        font-size: 16px;
+    }
+
+
+    /*nội dung tab mô tả sản phẩm*/
+    .description{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    /*nội dung tab nhận xét*/
+    .comment-warpper{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /*============================ div tổng ============================*/
+    .detail-product-warpper{
+        grid-template-columns: 1fr;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        grid-template-columns: 1fr;
+        height: 570px;
+    }
+
+    /*============================ div chứa ảnh ============================*/
+    .img-warpper{
+        height: 400px;
+    }
+
+    .img-warpper img{
+        width: 60%;
+    }
+
+    /*============================ div chứa ảnh nhỏ ============================*/
+    .small-img-warpper{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        margin-left: unset;
+        margin-top: 15px;
+    }
+
+    .small-img{
+        height: 130px;
+    }
+    
+    .small-img img{
+        width: 80px;
+    }
+
+    .small-img:nth-child(1):before{
+        content: '\f104';
+        font-size: 23px;
+        top:unset;
+        left: 0;
+        margin-left: 5px;
+    }
+    
+    .small-img:nth-child(4)::after{
+        content: '\f105';
+        font-size: 23px;
+        bottom: unset;
+        right: 0;
+        margin-right: 5px;
+    }
+
+    /*======================== mạng xã hội =========================*/
+    .socials{
+        justify-content: center;
+        font-size: 18px;
+    }
+
+
+    /*======================== tab =========================*/
+    .tab{
+        margin-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    /*buttton*/
+    .tab button {
+        margin-right: 20px;
+    }
+
+    .tab .tablinks{
+        font-size: 16px;
+    }
+
+
+    /*nội dung tab mô tả sản phẩm*/
+    .description{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    /*nội dung tab nhận xét*/
+    .comment-warpper{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /*============================ div tổng ============================*/
+    .detail-product-warpper{
+        grid-template-columns: 1fr;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        grid-template-columns: 1fr;
+        height: 570px;
+    }
+
+    /*============================ div chứa ảnh ============================*/
+    .img-warpper{
+        height: 400px;
+    }
+
+    /*============================ div chứa ảnh nhỏ ============================*/
+    .small-img-warpper{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        margin-left: unset;
+        margin-top: 15px;
+    }
+
+    .small-img{
+        height: 110px;
+    }
+    
+    .small-img img{
+        width: 80px;
+    }
+
+    .small-img:nth-child(1):before{
+        content: '\f104';
+        font-size: 23px;
+        top:unset;
+        left: 0;
+        margin-left: 5px;
+    }
+    
+    .small-img:nth-child(4)::after{
+        content: '\f105';
+        font-size: 23px;
+        bottom: unset;
+        right: 0;
+        margin-right: 5px;
+    }
+
+    /*thêm vào giỏ hàng*/
+    .pro-details-cart button{
+        padding: 17px 20px;
+    }
+
+    /*==================== danh mục và thẻ ===========================*/
+    .categories-warpper,
+    .tags-warpper{
+        display: flex;
+        align-items: unset;
+        flex-direction: column;
+    }
+
+    /*======================== mạng xã hội =========================*/
+    .socials{
+        justify-content: center;
+        font-size: 18px;
+    }
+
+
+    /*======================== tab =========================*/
+    .tab{
+        margin-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    /*buttton*/
+    .tab button {
+        margin-right: 13px;
+    }
+
+    .tab .tablinks{
+        font-size: 15px;
+    }
+
+
+    /*nội dung tab mô tả sản phẩm*/
+    .description{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    /*nội dung tab nhận xét*/
+    .comment-warpper{
+        grid-template-columns: 1fr;
+    }
+    
+    /*ảnh avatar*/
+    .avt-comment-warpper img{
+        width: 60px;
+        height: 70px;
+    }
+
+    /*tên comment*/
+    .name-warpper{
+        font-size: 15px;
+    }
+    
+    /*icon sao comment*/
+    .name-rating-warpper .rating{
+        font-size: 15px;
+    }
+
+    /*chữ trả lời*/
+    .reply{
+        font-size: 15px;
+    }
+
+    /*ngày nhận xét*/
+    .date-comment{
+        font-size: 13px;
+    }
+    
+    /*nội dung cmt*/
+    .content p{
+        font-size: 14px;
+    }
+
+    .name-rating-warpper{
+        flex-direction: column;
+    }
+
+    /*div chứa tên và icon sao*/
+    .name-rating-reply-warpper{
+        align-items: flex-start;
+    }
+
+
+}
+
+
+
+/*mobile nhỏ (iphone 6/7/8) trở xuống*/
+@media only screen and (max-width: 376px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        height: 440px;
+    }
+
+    /*============================ div chứa ảnh ============================*/
+    .img-warpper{
+        height: 300px;
+    }
+
+    .small-img{
+        height: 90px;
+    }
+    
+    .small-img img{
+        width: 70px;
+    }
+
+
+    .tab{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    /*buttton*/
+    .tab button {
+        margin-right: unset;
+        margin-top: 10px;
+    }
+
+    .tab .tablinks{
+        font-size: 16px;
+    }
+
+    /*trước button kích hoạt*/
+    .tab button.active::before{
+        content: '\f178';
+        font-family: "Fontawesome";
+        width: unset;
+        font-size: 17px;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 60px;
+        margin-top: 1px;
+        border-bottom: unset;
+        text-align: unset
+    }
+
+    .name-rating-warpper{
+        flex-direction: column;
+    }
+
+    /*div chứa tên và icon sao*/
+    .name-rating-reply-warpper{
+        align-items: flex-start;
+    }
+
+}
+
+
+/*mobile nhỏ (iphone 5/SE) trở xuống*/
+@media only screen and (max-width: 321px) {
+
+    /*cho li lên cùng 1 hàng*/
+    .breadcrumb ul li {
+        font-size: 13px;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        height: 420px;
+    }
+
+    .small-img{
+        height: 80px;
+    }
+    
+    .small-img img{
+        width: 50px;
+    }
+
+    /*tên sp*/
+    .product-name-warpper p{
+        font-size: 17px;
+    }
+
+    /*nội dung sp*/
+    .normal-title{
+        font-size: 14px;
+    }
+
+    /*thêm vào giỏ hàng*/
+    .pro-details-cart button{
+        padding: 9px 10px;
+    }
+
+    /*nội dung nhận xét*/
+    .description{
+        color: var(--text-normal-color);
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+/*mobile nhỏ (galaxy fold) trở xuống*/
+@media only screen and (max-width: 305px) {
+
+    /*============================ div tổng ============================*/
+    .detail-product-warpper{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }    
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        height: 350px;
+    }
+
+    /*============================ div chứa ảnh ============================*/
+    .img-warpper{
+        height: 250px;
+    }
+
+    .img-warpper img{
+        width: 60%;
+    }
+
+    .small-img{
+        height: 65px;
+    }
+    
+    .small-img img{
+        width: 40px
+    }
+
+    /*tên sp*/
+    .product-name-warpper p{
+        font-size: 16px;
+    }
+
+    /*giá giảm*/
+    .price-sale{
+        font-size: 16px;
+    }
+
+    /*giá gốc*/
+    .price-default{
+        font-size: 16px;
+    }
+
+    /*icon ngôi sao*/
+    .rating{
+        font-size: 15px;
+    }
+
+    /*đánh giá*/
+    .reviews{
+        font-size: 13px;
+    }
+
+    /*chữ màu sắc*/
+    .color-warpper p{
+        font-size: 14px;
+    }
+
+    /*button + label hình tròn màu sắc*/
+    .regular-radio + label{
+        width: 20px;
+        height: 20px;
+    }
+
+    .cart-plus-minus button{
+        padding: 12px 8px;
+    }
+
+    /*thêm vào giỏ hàng*/
+    .pro-details-cart button{
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+
+    /*======================== mạng xã hội =========================*/
+    .socials > div {
+        margin-right: 20px;
+    }
+
+    /*trước button kích hoạt*/
+    .tab button.active::before{
+        content: '\f178';
+        font-family: "Fontawesome";
+        width: unset;
+        font-size: 17px;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-top: 1px;
+        border-bottom: unset;
+        text-align: unset
+    }
+   
+
+}

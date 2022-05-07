@@ -1,0 +1,696 @@
+:root{
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+    /*màu icon sao*/
+    --rating-color:rgb(212, 196, 109);
+}
+
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:nth-child(1)::after,
+.breadcrumb li:nth-child(2)::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li thứ nhất & li thứ 2*/
+.breadcrumb li:nth-child(1),
+.breadcrumb li:nth-child(2){
+    color: #999999;
+}
+
+/*li thứ 3*/
+.breadcrumb li:nth-child(3) {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*============================ div tổng ============================*/
+.detail-product-warpper{
+    /* background-color: rgb(162, 121, 202); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 90px;
+    margin-top: 50px;
+}
+
+/*============================ div trái ============================*/
+.left-warpper{
+    height: auto;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+/*============================ div chứa ảnh ============================*/
+.img-warpper{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #e4e8ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ảnh*/
+.img-warpper img{
+    width: 80%;
+}
+
+/*giảm giá %*/
+.img-warpper::before{
+    content: '-48%';
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgb(175, 109, 212);
+    padding: 3px 13px;
+    border-radius: 10%;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    margin: 20px;
+}
+
+/*============================ div chứa ảnh nhỏ ============================*/
+.small-img-warpper{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.small-img{
+    position: relative;
+    background-color: #e4e8ec;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-img img{
+    width: 110px;
+}
+
+.small-img:nth-child(1):before{
+    content: '\f106';
+    font-family: FontAwesome;
+    font-size: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.small-img:nth-child(4)::after{
+    content: '\f107';
+    font-size: 25px;
+    font-family: FontAwesome;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.small-img:hover:nth-child(1):before{
+    opacity: 1;
+}
+
+.small-img:hover:nth-child(4)::after{
+    opacity: 1;
+}
+
+/*============================ div phải ============================*/
+.right-warpper{
+    display: grid;
+    align-content: center;
+}
+
+/*tên sp*/
+.product-name-warpper p{
+    font-size: 22px;
+    color: var(--text-big-color);
+    font-weight: 450;
+}
+
+/*giá sp*/
+.product-price-warpper{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/*giá giảm*/
+.price-sale{
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+/*giá gốc*/
+.price-default{
+    font-size: 18px;
+    color:rgb(75, 224, 152);
+    text-decoration: line-through;
+}
+
+/*icon ngôi sao*/
+.rating{
+    font-size: 18px;
+    color: var(--rating-color);
+    margin-right: 10px;
+}
+
+.rating-warpper{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.reviews{
+    font-size: 15px;
+    color: #333333;
+}
+
+.normal-title{
+    font-size: 15px;
+    color: var(--text-normal-color);
+    margin-top: 15px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(219, 213, 213);
+}
+
+/*============================ màu sắc ====================================*/
+.color-warpper{
+    margin-top: 30px;
+}
+
+.color-warpper p{
+    color: black;
+}
+
+.color-input-label-warpper{
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.regular-radio {
+    display: none;
+}
+
+.regular-radio + label{
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.color-white .regular-radio:nth-child(1) + label:nth-child(2){
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+.color-black .regular-radio:nth-child(1) + label:nth-child(2){
+    background: rgb(56, 53, 53);
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 10px;
+
+}
+
+.color-pink .regular-radio:nth-child(1) + label:nth-child(2){
+    background: #c49c9c;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+.color-blue .regular-radio:nth-child(1) + label:nth-child(2){
+    background: #5c72a0;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+
+/*============= thêm icon tick vào sau label của color white ===============*/
+.color-white .regular-radio:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: FontAwesome;
+    visibility: hidden; /*ẩn*/
+    color: rgb(0, 0, 0);
+}
+
+.color-white .regular-radio:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+
+/*=========== thêm icon tick vào sau label của color black ============*/
+.color-black .regular-radio:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    color: rgb(255, 255, 255);
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: FontAwesome;
+    visibility: hidden; /*ẩn*/
+}
+
+.color-black .regular-radio:nth-child(1):checked + label:nth-child(2)::after{
+    visibility:visible; /*hiện khi click*/
+}
+
+
+/*=========== thêm icon tick vào sau label của color pink ============*/
+.color-pink .regular-radio:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: FontAwesome;
+    visibility: hidden; /*ẩn*/
+    color: #fff;
+}
+
+.color-pink .regular-radio:nth-child(1):checked + label:nth-child(2)::after{
+    visibility:visible; /*hiện khi click*/
+}
+
+
+/*thêm icon tick vào sau label của color blue*/
+.color-blue .regular-radio:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: FontAwesome;
+    visibility: hidden; /*ẩn*/
+    color: #fff;
+}
+
+.color-blue .regular-radio:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+/*===================== .pro details quality warpper =========================*/
+.pro-details-quality-warpper{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*cart plus minus*/
+.cart-plus-minus{
+    width: 90px;
+    display: flex;
+    border: 1px solid rgb(235, 229, 229);
+    margin-right: 20px;
+}
+
+.cart-plus-minus button{
+    border: none;
+    cursor: pointer;
+    padding: 17px 8px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.cart-plus-minus input{
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 40px;
+    background-color: #f8f9fa;
+}
+
+
+/*thêm vào giỏ hàng*/
+.pro-details-cart button{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--button-bg-color);
+    outline: none;
+    border: none;
+    padding: 18px 30px;
+    cursor: pointer;
+}
+
+.pro-details-cart button:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+/*thêm vào giỏ hàng*/
+.pro-details-wishlist{
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+/*==================== danh mục và thẻ ===========================*/
+.categories-warpper,
+.tags-warpper{
+    display: flex;
+    align-items: center;
+}
+
+.categories-title,
+.tags-title{
+    margin-right: 10px;
+    color: #333333;
+}
+
+.type-title{
+    font-size: 14px;
+    color: #5a5858;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.type-title:hover{
+    color: rgb(88, 138, 203);
+}
+
+.categories-warpper{
+    margin-top: 20px;
+}
+
+.tags-warpper{
+    margin-top: 10px;
+}
+
+
+.type-warpper{
+    display: flex;
+}
+
+/*======================== mạng xã hội =========================*/
+.socials{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.socials > div {
+    margin-right: 40px;
+}
+
+.socials i:hover{
+    color: rgb(60, 105, 173);
+}
+
+
+
+
+
+
+/*=========================== tab =========================*/
+.tab{
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(219, 213, 213);
+}
+  
+/*buttton*/
+.tab button {
+    position: relative;
+    color: var(--text-normal-color);
+    margin-right: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    background-color: #f8f9fa;
+}
+
+  
+/*button khi kích hoạt*/
+.tab button.active {
+    color: var(--text-big-color);
+}
+
+/*trước button kích hoạt*/
+.tab button.active::before{
+    content: '';
+    width: 50px;
+    left: 0;
+    margin-top: 20px;
+    position: absolute;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--text-big-color);
+    text-align: center;
+}
+
+
+/*============================ tab content =======================*/
+.tabcontent{
+    margin-top: 20px;
+}
+
+/*span*/
+.info-title span{
+    color: var(--text-big-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+
+.info-title{
+    margin-top: 15px;
+}
+
+/*p*/
+.info-title p{
+    font-size: 15px;
+    color: var(--text-normal-color);
+}
+
+.description{
+    color: var(--text-normal-color);
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.comment-warpper{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-column-gap: 100px;
+}
+
+.comment{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-column-gap: 20px;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+/*div chứa ảnh*/
+.avt-comment-warpper{
+    width: 100%;
+    height: auto;
+}
+
+/*ảnh*/
+.avt-comment-warpper img{
+    width: 100px;
+    height: 100px;
+}
+
+/*div chứa tên và icon sao*/
+.name-rating-reply-warpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-rating-warpper{
+    display: flex;
+}
+
+/*tên comment*/
+.name-warpper{
+    font-size: 16px;
+    color: var(--text-big-color);
+    margin-right: 15px;
+}
+
+/*icon sao comment*/
+.name-rating-warpper .rating{
+    font-size: 15px;
+}
+
+/*chữ trả lời*/
+.reply{
+    cursor: pointer;
+    color: var(--text-big-color);
+}
+
+/*ngày nhận xét*/
+.date-comment{
+    font-size: 13px;
+    color: var(--text-normal-color);
+    margin-bottom: 5px;
+}
+
+/*nội dung cmt*/
+.content p{
+    color: var(--text-normal-color);
+    font-size: 14px;
+    width: 100%;
+}
+
+
+/*chữ thêm nhận xét*/
+.rating-form-wrapper p{
+    font-size: 16px;
+    color: var(--text-big-color);
+}
+
+.star-box{
+    display: flex;
+    align-items: center;
+}
+
+.star-box .rating{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.star-box span{
+    font-size: 15px;
+    color: var(--text-normal-color);
+}
+
+.input-warpper{
+    margin-top: 20px;
+}
+
+.name-email-warpper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.input-name-warpper input,
+.input-email-warpper input,
+.content-submit-warpper textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(231, 226, 226);
+    padding: 10px 20px;
+    background-color: #f8f9fa;;
+}
+
+
+
+.content-submit-warpper{
+    margin-top: 10px;
+}
+
+.content-submit-warpper textarea{
+    overflow: auto;
+    resize: vertical; /*kích thước theo chiều dọc*/
+    height: inherit !important; /*kế thừa theo chiều cao*/
+    font-family: "Poppins", sans-serif;
+}
+
+.submit-sign-up-warpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-sign-up-warpper button{
+    margin-top: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.submit-sign-up-warpper button:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+.go-to-signup p{
+    cursor: pointer;
+    color: var(--text-normal-color);
+    font-size: 15px;
+}
+
+
+.product-title-warpper .product-title{
+    font-size: 20px;
+    color: var(--text-big-color);
+}

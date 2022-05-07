@@ -1,0 +1,61 @@
+
+/*tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    /*============================ signin warpper ============================*/
+    .signin-warpper{
+       width: 80%;
+    }
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+     
+    /*============================ signin warpper ============================*/
+    .signin-warpper{
+       width: 90%;
+    }
+
+    .email i,
+    .password i{
+        width: 15%;
+        font-size: 12px;
+    }
+
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .signin-title{
+        display: none;
+    }
+
+    .signin-top p,
+    .signin-mid p{
+        font-size: 15px;
+    }
+
+    .remember p,
+    .forgot-pass p{
+        font-size: 14px;
+    }
+
+    .signin-top i{
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .remember input[type="checkbox"]{
+        width: 12px;
+        height: 12px;
+    }
+
+    .signin-mid{
+        margin-top: unset;
+    }
+}
+

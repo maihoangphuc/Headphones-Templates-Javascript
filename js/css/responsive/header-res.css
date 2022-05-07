@@ -1,0 +1,263 @@
+/*pc*/
+@media only screen and (min-width: 1367px) {
+    .mobile-header-warpper,
+    .mobile-menu-warpper,
+    .mobile-header-menu-warpper{
+        display: none;
+    }
+}
+
+
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    /*================== container (chứa) ==================*/
+    .container-80{
+        max-width: 90%;
+    }
+
+    .container-60{
+        max-width: 80%;
+    }
+
+    /*ẩn header*/
+    .top-header-warpper,
+    .bottom-header-warpper,
+    .border-bottom-header{
+        display: none;
+    }
+  
+    /*hiện*/
+    .mobile-header-warpper,
+    .mobile-header-menu-warpper,
+    .mobile-header-icon-bars,
+    .mobile-header-menu-icon-close {
+        display: block;
+        display: flex;
+    }
+
+    .mobile-header-icon-bars{
+        font-size: 19px;
+    }
+
+    .mobile-header-icon-search{
+        font-size: 19px;
+        display: block;
+    }
+
+    .mobile-header-menu-icon-close {
+        font-size: 23px;
+    }
+
+    .mobile-header-warpper{
+        padding: 20px 20px;
+    }
+
+    .mobile-header-menu-logo{
+        width: 150px;
+    }
+
+    .mobile-menu-warpper,
+    .mobile-header-menu-warpper li a{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /*================== container ==================*/
+    .container-80{
+        max-width: 90%;
+    }
+
+    .container-60{
+        max-width: 80%;
+    }
+
+    /*ẩn header*/
+    .top-header-warpper,
+    .bottom-header-warpper,
+    .border-bottom-header{
+        display: none;
+    }
+  
+    /*hiện*/
+    .mobile-header-warpper,
+    .mobile-header-menu-warpper,
+    .mobile-header-icon-bars,
+    .mobile-header-menu-icon-close{
+        display: block;
+        display: flex;
+    }
+
+    .mobile-header-warpper{
+        padding: 20px 20px;
+    }
+
+    .mobile-header-icon-bars{
+        font-size: 17px;
+    }
+
+    .mobile-header-icon-search{
+        font-size: 17px;
+        display: block;
+    }
+
+    .mobile-header-menu-icon-close {
+        font-size: 20px;
+    }
+
+    .mobile-header-menu-logo{
+        width: 150px;
+    }
+
+    .mobile-menu-warpper,
+    .mobile-header-menu-warpper li a{
+        font-size: 20px;
+    }
+
+}
+
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+    /*================== container ==================*/
+    .container-80{
+        max-width: 90%;
+    }
+
+    .container-60{
+        max-width: 80%;
+    }
+
+    /*ẩn header*/
+    .top-header-warpper,
+    .bottom-header-warpper,
+    .border-bottom-header{
+        display: none;
+    }
+  
+    /*hiện*/
+    .mobile-header-warpper,
+    .mobile-header-menu-warpper,
+    .mobile-header-icon-bars,
+    .mobile-header-menu-icon-close{
+        display: block;
+        display: flex;
+    }
+
+    .mobile-header-warpper{
+        padding: 20px 20px;
+    }
+
+    .mobile-header-icon-bars{
+        font-size: 17px;
+    }
+
+    .mobile-header-icon-search{
+        font-size: 17px;
+        display: block;
+    }
+
+    .mobile-header-menu-icon-close {
+        font-size: 20px;
+    }
+
+    .mobile-header-menu-logo{
+        width: 150px;
+    }
+
+    .mobile-menu-warpper,
+    .mobile-header-menu-warpper li a{
+        font-size: 20px;
+    }
+
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+
+    .container-80,
+    .container-60{
+        max-width:90%;
+    }
+    
+    .mobile-header-logo {
+        width: 110px;
+    }
+
+    .mobile-header-menu-logo{
+        width: 130px;
+    }
+
+    .mobile-menu-warpper,
+    .mobile-header-menu-warpper li a{
+        font-size: 16px;
+    }
+
+    .mobile-header-icon-bars{
+        font-size: 15px;
+    }
+
+    .mobile-header-icon-search{
+        font-size: 15px;
+        display: block;
+    }
+
+    .mobile-header-menu-icon-close{
+        font-size: 18px;
+    }
+
+    /*ẩn header*/
+    .top-header-warpper,
+    .bottom-header-warpper,
+    .border-bottom-header{
+        display: none;
+    }
+
+    /*hiện*/
+    .mobile-header-warpper,
+    .mobile-header-menu-warpper,
+    .mobile-header-icon-bars,
+    .mobile-header-menu-icon-close {
+        display: block;
+        display: flex;
+    }
+
+}
+
+
+
+/*mobile nhỏ (iphone 6/7/8) trở xuống*/
+@media only screen and (max-width: 376px) {
+
+}
+
+
+/*màn hình xoay ngang*/
+@media (max-width: 813px) and (orientation: landscape) {
+  
+    .mobile-menu-warpper{
+        overflow: scroll;
+    }
+
+    .mobile-header-menu-warpper{
+        padding: 20px;
+    }
+    
+    .mobile-menu ul{
+        margin-top: unset;
+    }
+
+    .mobile-menu ul li a{
+        font-size: 15px;
+    }
+
+}

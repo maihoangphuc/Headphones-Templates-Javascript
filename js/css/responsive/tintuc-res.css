@@ -1,0 +1,130 @@
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    
+    /*============================ news warpper ============================*/
+    .news-warpper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .title-page{
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+}
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /*============================ news warpper ============================*/
+    .news-warpper{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .title-page{
+        font-size: 21px;
+        letter-spacing: 3px;
+    }
+
+}
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+    /*============================ news warpper ============================*/
+    .news-warpper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /*============================ phân trang ============================*/
+    .pagination{
+        font-size: 16px;
+    }
+
+    .pagination a {
+        padding: 8px 10px;
+    }
+
+    /*============================ đọc thêm và chia sẻ ============================*/
+    .readmore-share-warpper{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+
+    /*============================ news warpper ============================*/
+    .news-warpper{
+        grid-template-columns: 1fr;
+    }
+
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /*============================ phân trang ============================*/
+    .pagination{
+        font-size: 14px;
+    }
+
+    .pagination a {
+        padding: 8px 10px;
+    }
+}
+
+
+/*mobile small (samsung galaxy fold)*/
+@media only screen and (max-width: 280px) {
+
+    .title-page{
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    .small-title{
+        font-size: 12px;
+    }
+
+    .big-title{
+        font-size: 13px;
+    }
+
+    .normal-title{
+        font-size: 12px;
+    }
+
+    .read-more-title,
+    .share-title{
+        font-size: 11px;
+    }
+
+    .social-icon i{
+        font-size: 9px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    /*============================ phân trang ============================*/
+    .pagination{
+        font-size: 10px;
+    }
+
+    .pagination a {
+   
+        padding: 8px 10px;
+    }
+  
+    
+
+}

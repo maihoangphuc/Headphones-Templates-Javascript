@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="shortcut icon" type="image/png" href="./images/logo/icon-logo.png"/>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/style/header.css">
+    <link rel="stylesheet" href="./css/responsive/header-res.css">
+    <!-- css footer -->
+    <link rel="stylesheet" href="./css/style/footer.css">
+    <link rel="stylesheet" href="./css/responsive/footer-res.css">
+    <!-- css thanh toán -->
+    <link rel="stylesheet" href="./css/style/thanhtoan.css">
+    <link rel="stylesheet" href="./css/responsive/thanhtoan-res.css">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/f6666f8125.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ============= header ============= -->
+    <header>
+        <div class="load-html" data-source="header.html"></div>
+    </header>
+    <!-- ============= end header ============= -->
+
+    <!-- ============= main ============= -->
+    <main>
+
+        <!-- ============= đánh dấu trang ============= -->
+        <div class="breadcrumb container-80">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li>Thanh Toán</li>
+            </ul>
+        </div>
+        <!-- ============= kết thúc đánh dấu trang ============= -->
+
+        <!-- ============= đường viền dưới đánh dấu trang ============= -->
+        <div class="border-bottom-breadcrumb container-80"></div>
+        <!-- ============= kết thúc đường viền dưới đánh dấu trang ============= -->
+
+        <!-- ============= tiêu đề trang ============= -->
+        <div class="title-page container-80">
+            <p>Thanh Toán</p>
+        </div>
+        <!-- ============= kết thúc tiêu đề trang ============= -->
+
+
+        <!-- ============= thanh toán ============= -->
+        <div class="checkout-warpper container-80">
+            <!-- left warpper -->
+            <div class="left-warpper">
+                <p class="left-title">Chi Tiết Hóa Đơn</p>
+
+                <!-- họ và tên -->
+                <div class="firstname-lastname-warpper">
+                    <!-- họ -->
+                    <div class="firstname-warpper">
+                        <label for="firstName" class="label">Họ*</label>
+                        <input type="text" placeholder="Nhập họ">
+                    </div>
+                    <!-- kết thúc họ -->
+
+                    <!-- tên -->
+                    <div class="lastname-warpper">
+                        <label for="lastName" class="label">Tên*</label>
+                        <input type="text" placeholder="Nhập tên">
+                    </div>
+                    <!-- kết thúc tên -->
+                </div>
+                <!-- kết thúc họ và tên -->
+
+                <!-- tên công ty -->
+                <div class="company-warpper">
+                    <label for="company" class="label">Tên Công Ty*</label>
+                    <input type="text" placeholder="Nhập tên công ty">
+                </div>
+                <!-- kết thúc tên công ty -->
+
+                <!-- quốc gia -->
+                <div class="country-warpper">
+                    <label for="country" class="label">Quốc Gia*</label>
+                    <select name="country">
+                        <option value="">Chọn quốc gia</option>
+                        <option value="">Việt Nam</option>
+                        <option value="">Hàn Quốc</option>
+                        <option value="">Nhật Bản</option>
+                        <option value="">Thái Lan</option>
+                        <option value="">Trung Quốc</option>
+                        <option value="">Anh</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <!-- kết thúc quốc gia -->
+
+                <!-- tỉnh -->
+                <div class="province-warpper">
+                    <label for="province" class="label">Tỉnh*</label>
+                    <select name="province">
+                        <option value="">Chọn tỉnh</option>
+                        <option value="">Phú Yên</option>
+                        <option value="">Khánh Hòa</option>
+                        <option value="">Ninh Thuận</option>
+                        <option value="">Bình Thuận</option>
+                        <option value="">Đồng Nai</option>
+                        <option value="">Hồ Chí Minh</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <!-- kết thúc tỉnh -->
+
+                <!-- thị trấn / thành phố -->
+                <div class="city-warpper">
+                    <label for="city" class="label">Thị Trấn / Thành Phố*</label>
+                    <input type="text" placeholder="Nhập thị trấn, thành phố">
+                </div>
+                <!-- kết thúc thị trấn / thành phố -->
+
+                <!-- thôn và mã zip -->
+                <div class="village-zip-warpper">
+                    <!-- thôn -->
+                    <div class="village-warpper">
+                        <label for="village" class="label">Xã / Thôn*</label>
+                        <input type="text" placeholder="Nhập xã, thôn">
+                    </div>
+                    <!-- kết thúc thôn -->
+
+                    <!-- mã zip -->
+                    <div class="zip-warpper">
+                        <label for="zip" class="label">Mã Bưu / Zip*</label>
+                        <input type="text" placeholder="Nhập mã bưu, zip">
+                    </div>
+                    <!-- kết thúc mã zip -->
+                </div>
+                <!-- kết thúc thôn và mã zip -->
+
+                <!-- sdt và email -->
+                <div class="phone-email-warpper">
+                    <!-- sdt -->
+                    <div class="phone-warpper">
+                        <label for="phone" class="label">Số Điện Thoại*</label>
+                        <input type="tel" placeholder="Nhập số điện thoại">
+                    </div>
+                    <!-- kết sdt -->
+
+                    <!-- mã email -->
+                    <div class="email-warpper">
+                        <label for="email" class="label">Email*</label>
+                        <input type="email" placeholder="Nhập email">
+                    </div>
+                    <!-- kết thúc email -->
+                </div>
+                <!-- kết thúc sdt và email -->
+
+                <p class="left-title">Thông Tin Khác</p>
+
+                <!-- ghi chú -->
+                <div class="note-warpper">
+                    <label for="note" class="label">Ghi Chú Đơn Hàng</label>
+                    <textarea name="note" cols="100%" rows="6" placeholder="Ghi chú về đơn đặt hàng của bạn, ví dụ như ghi chú đặc biệt để giao hàng."></textarea>
+                </div>
+                <!-- kết thúc ghi chú -->
+
+            </div>
+            <!-- kết thúc left warpper -->
+
+
+            <!-- right warpper -->
+            <div class="right-warpper">
+                <p class="right-title">Đơn Đặt Hàng Của Bạn</p>
+
+                <!-- order warpper -->
+                <div class="order-warpper">
+
+                    <!-- product & price warpper -->
+                    <div class="product-price-warpper">
+                        <p class="product">Tên Sản Phẩm</p>
+                        <p class="price">Giá</p>
+                    </div>
+                    <!-- kết thúc product & price warpper -->
+
+                    <!-- border bottom order -->
+                    <div class="border-bottom-order"></div>
+                    <!-- kết thúc border bottom order -->
+
+                    <!-- productname & pricenumber warpper -->
+                    <div class="productName-priceNumber-warpper">
+                        <p class="productName">Apple AirPods Pro x 2</p>
+                        <p class="priceNumber">12.000.000đ</p>
+                    </div>
+                    <!-- kết thúc productname & pricenumber warpper -->
+
+                    <!-- border bottom order -->
+                    <div class="border-bottom-order"></div>
+                    <!-- kết thúc border bottom order -->
+
+                    <!-- shipping & freeShipping warpper -->
+                    <div class="shipping-freeShipping-warpper">
+                        <p class="shipping">Vận Chuyển</p>
+                        <p class="freeShipping">Miễn Phí</p>
+                    </div>
+                    <!-- kết thúc shipping & freeShipping warpper -->
+
+                    <!-- border bottom order -->
+                    <div class="border-bottom-order"></div>
+                    <!-- kết thúc border bottom order -->
+
+                    <!-- priceTotal & priceNumberTotal warpper -->
+                    <div class="priceTotal-priceNumberTotal-warpper">
+                        <p class="priceTotal">Tổng Giá</p>
+                        <p class="priceNumberTotal">12.000.000đ</p>
+                    </div>
+                    <!-- kết thúc priceTotal & priceNumberTotal warpper -->
+ 
+                </div>
+                <!-- kết thúc order warpper -->
+                
+                <!-- button đặt hàng -->
+                <button id="myBtn" type="submit" class="btn-order">Đặt Hàng</button>
+                <!-- kết thúc button đặt hàng -->
+
+                <!-- modal -->
+                <div id="myModal" class="modal">
+                    
+                    <!-- modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <div class="img-order-success">
+                            <img src="./images/svg/order-success.png" alt="order-success">
+                        </div>
+
+                        <div class="title-success-warpper">
+                            <p class="title-success-1">Thành Công!</p>
+                            <p class="title-success-2">Đơn hàng 459836 đã được gửi!</p>
+                            <p class="title-success-3">Cảm ơn Quý Khách đã đặt hàng tại Electronics!</p>
+                            <p class="title-success-4">Chúng tôi sẽ liên hệ Quý Khách để xác nhận đơn hàng trong thời gian sớm nhất!</p>
+                            <p class="title-success-5">Xin chân thành cảm ơn!</p>
+                        </div>
+
+                        <div class="button-order-detail">
+                            <a href="chitietdonhang.html">
+                                <button>Xem Chi Tiết Đơn Hàng</button>
+                            </a>
+                        </div>
+                    
+                      
+                    </div>
+                    <!-- kết thúc modal content -->
+                  
+                </div>
+                <!-- kết thúc modal -->
+
+            </div>
+            <!-- kết thúc right warpper -->
+
+        </div>
+        <!-- ============= kết thúc thanh toán ============= -->
+
+    </main>
+    <!-- ============= end main ============= -->
+
+    <!-- ============= footer ============= -->
+    <footer>
+        <div class="load-html" data-source="footer.html"></div>
+    </footer>
+    <!-- ============= end footer ============= -->
+    
+    <!-- src js -->
+    <script src="./js/load-index.js"></script>
+    <script src="./js/modal.js"></script>
+    
+</body>
+</html>

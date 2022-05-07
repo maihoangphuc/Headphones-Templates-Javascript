@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="shortcut icon" type="image/png" href="./images/logo/icon-logo.png"/>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/style/header.css">
+    <link rel="stylesheet" href="./css/responsive/header-res.css">
+    <!-- css footer -->
+    <link rel="stylesheet" href="./css/style/footer.css">
+    <link rel="stylesheet" href="./css/responsive/footer-res.css"> 
+    <!-- css liên hệ -->
+    <link rel="stylesheet" href="./css/style/lienhe.css">
+    <link rel="stylesheet" href="./css/responsive/lienhe-res.css">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/f6666f8125.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ============= header ============= -->
+    <header>
+        <div class="load-html" data-source="header.html"></div>
+    </header>
+    <!-- ============= end header ============= -->
+    
+
+    <!-- ============= main ============= -->
+    <main>
+        
+        <!-- ============= đánh dấu trang ============= -->
+        <div class="breadcrumb container-80">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li>Liên Hệ</li>
+            </ul>
+        </div>
+        <!-- ============= kết thúc đánh dấu trang ============= -->
+
+        <!-- ============= đường viền dưới đánh dấu trang ============= -->
+        <div class="border-bottom-breadcrumb container-80"></div>
+        <!-- ============= kết thúc đường viền dưới đánh dấu trang ============= -->
+
+        <!-- ============= tiêu đề trang ============= -->
+        <div class="title-page container-80">
+            <p>Liên Hệ</p>
+        </div>
+        <!-- ============= kết thúc tiêu đề trang ============= -->
+
+        <!-- ============= div chứa liên hệ ============= -->
+        <div class="contact-warpper container-80">
+
+            <!-- bản đồ bên trái -->
+            <div class="contact-left">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7668545691295!2d109.30614631482352!3d13.11395099076257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316fec452491bfb5%3A0xcb714f3ca8c3a339!2zxJDhu5ljIEzhuq1wLCBUcC4gVHV5IEjDsmEsIFBow7ogWcOqbg!5e0!3m2!1svi!2s!4v1625050395587!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <!-- kết thúc bản đồ bên trái -->
+
+            <!-- form liên hệ bên phải -->
+            <div class="contact-right">
+
+                <!-- ============= form liên hệ ============= -->
+                <form action="lienhe.html">
+                    <div class="contact-right-title">
+                        <h3 class="h3-contact-right-title">Liên Hệ Chúng Tôi</h3>
+                    </div>
+    
+                    <!-- phần trên -->
+                    <div class="top-form-group">
+                        <div class="top">
+                            <label class="label">Họ Và Tên</label>
+                            <input type="text" class="form-control" placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="top">
+                            <label class="label">Email</label>
+                            <input type="email" class="form-control" placeholder="Nhập email">
+                        </div>
+                    </div>
+                    <!-- kết thúc phần trên -->
+    
+                    <!-- phần dưới -->
+                    <div class="bottom-form-group">
+                        <div class="bottom">
+                            <label class="label">Chủ Đề</label>
+                            <input type="text" class="form-control" placeholder="Nhập chủ đề">
+                        </div>
+        
+                        <div class="bottom">
+                            <label class="label">Nội Dung</label>
+                            <textarea class="form-control" cols="30" rows="4" placeholder="Nhập nội dung"></textarea>
+                        </div>
+                       
+                        
+                    </div>
+                    <!-- kết thúc phần dưới -->
+                    
+                    <div class="send-captcha-warpper">
+
+                        <div class="btn-send">
+                            <button type="submit">Gửi Đi</button>
+                        </div>
+
+                        <div class="captcha-warpper">
+                            <input type="text" placeholder="Nhập captcha">
+                            <img src="./images/captcha/captcha.png" alt="captcha">
+                        </div>
+
+                    </div>
+                </form>
+                <!-- ============= kết thúc form liên hệ ============= -->
+                
+            </div>
+            <!-- kết thúc form liên hệ bên phải -->
+            
+        </div>
+        <!-- ============= kết thúc div chứa liên hệ ============= -->
+
+    </main>
+    <!-- ============= end main ============= -->
+
+    <!-- ============= footer ============= -->
+    <footer>
+        <div class="load-html" data-source="footer.html"></div>
+    </footer>
+    <!-- ============= end footer ============= -->
+    
+    <!-- src js -->
+    <script src="./js/load-index.js"></script>
+    
+</body>
+</html>

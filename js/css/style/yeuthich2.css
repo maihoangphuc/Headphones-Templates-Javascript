@@ -1,0 +1,102 @@
+:root{
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+}
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.wishlist-empty-warpper{
+    margin-top: 50px;
+}
+
+.img-warpper{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.img-warpper img{
+    width: 120px;
+}
+
+.text-normal{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--text-normal-color);
+}
+
+.btn-shopnow{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-shopnow button{
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 25px;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-shopnow button:hover{
+    background-color: var(--button-bg-color-hover);
+}

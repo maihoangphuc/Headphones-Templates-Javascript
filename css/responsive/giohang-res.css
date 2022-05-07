@@ -1,0 +1,313 @@
+/*pc*/
+@media only screen and (min-width: 1367px) {
+
+}
+
+
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .product-img img{
+        width: 60%
+    }
+}
+
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    /*============================ div tổng ============================*/
+    .cartPage-warpper{
+        grid-template-columns: 1fr;
+    }
+    
+    /*============================ div trái ============================*/
+    .left-warpper{
+        padding: 10px;
+        height: 510px;
+    }
+    
+    /*============================ div phải ============================*/
+    .right-warpper{
+        padding: 10px;
+    }
+    
+    /*============================ th ============================*/
+    th{
+        font-size: 15px;
+    }
+    
+    .coupon input[type="text"]{
+        width: 185px;
+        height: 40px;
+        border: 1px solid #ddd;
+    }
+    
+    .cart-update button{
+        width: 100%;
+    }
+    
+    /*============================ input số lượng ============================*/
+    .quantity input[type="number"]{
+        width: 50px;
+        height: 30px;
+        padding: 0px 10px;
+    }
+    
+    /*============================ image ============================*/
+    .product-thumb{
+        width: 50px;
+        height: 130px;
+    }
+    
+    .product-img img{
+        width: 100%;
+    }
+    
+    /*============================ text tên sp và giá sp ============================*/
+    .product-name,
+    .amount{
+        font-size: 15px;
+    }
+
+    .product-img img{
+        width: 80px;
+    }
+
+}
+
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /*============================ div tổng ============================*/
+    .cartPage-warpper{
+        grid-template-columns: 1fr;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        padding: 10px;
+        height: 510px;
+    }
+
+    /*============================ div phải ============================*/
+    .right-warpper{
+        padding: 10px;
+    }
+
+    /*============================ th ============================*/
+    th{
+        font-size: 14px;
+    }
+
+    /*============================ input số lượng ============================*/
+    .quantity input[type="number"]{
+        width: 50px;
+        height: 30px;
+        padding: 0px 10px;
+    }
+
+    /*============================ cart item update ============================*/
+    .cart-item-update{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .coupon input[type="text"]{
+        width: 185px;
+        height: 40px;
+        border: 1px solid #ddd;
+    }
+
+    .cart-update button{
+        width: 100%;
+        position: absolute;
+    }
+
+    /*============================ image ============================*/
+    .product-thumb{
+        width: 50px;
+        height: 130px;
+    }
+    
+    .product-img img{
+        width: 100%;
+    }
+
+    /*============================ text tên sp và giá sp ============================*/
+    .product-name,
+    .amount{
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /*============================ div tổng ============================*/
+    .cartPage-warpper{
+        grid-template-columns: 1fr;
+    }
+
+    /*============================ div trái ============================*/
+    .left-warpper{
+        padding: 10px;
+        height: 510px;
+    }
+
+    /*============================ div phải ============================*/
+    .right-warpper{
+        padding: 10px;
+    }
+
+    /*============================ th ============================*/
+    th{
+        font-size: 14px;
+    }
+
+    /*============================ input số lượng ============================*/
+    .quantity input[type="number"]{
+        width: 50px;
+        height: 30px;
+        padding: 0px 10px;
+    }
+
+    /*============================ cart item update ============================*/
+    .cart-item-update{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    /*input nhập mã giảm giá*/
+    .coupon input[type="text"]{
+        width: 185px;
+        height: 40px;
+        border: 1px solid #ddd;
+    }
+
+    /*nút cập nhập giỏ hàng*/
+    .cart-update button{
+        width: 100%;
+        position: absolute;
+    }
+
+    /*============================ image ============================*/
+    .product-thumb{
+        width: 50px;
+        height: 130px;
+    }
+    
+    .product-img img{
+        width: 100%;
+    }
+
+    /*============================ text tên sp và giá sp ============================*/
+    .product-name,
+    .amount{
+        font-size: 14px;
+        width: 20%;
+    }
+
+}
+
+
+
+/*mobile nhỏ (iphone 6/7/8) trở xuống*/
+@media only screen and (max-width: 376px) {
+    /*============================ div trái ============================*/
+    .left-warpper{
+        padding: 10px;
+        height: 410px;
+    }
+
+    /*============================ div phải ============================*/
+    .right-warpper{
+        padding: 10px;
+        height: 250px;
+    }
+    
+    /*============================ th & title heading ============================*/
+    th,
+    .title-heading{
+        font-size: 12px;
+    }
+
+    /*============================ image ============================*/
+    .product-thumb{
+        width: 35px;
+        height: 90px;
+    }
+    
+    .product-img img{
+        width: 90%;
+    }
+
+    /*============================ input số lượng ============================*/
+    .quantity input[type="number"]{
+        width: 40px;
+        height: 30px;
+        padding: 0px 5px;
+    }
+
+    /*============================ text tên sp và giá sp ============================*/
+    .product-name,
+    .amount{
+        font-size: 12px;
+    }
+
+    /*============================ cart item update ============================*/
+
+    .coupon input[type="text"]{
+        width: 120px;
+        height: 30px;
+        border: 1px solid #ddd;
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .coupon input[type="submit"]{
+        padding: unset;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+
+    .cart-update button,
+    .cart-checkout input[type="submit"]{
+        font-size: 12px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .title{
+        font-size: 13px;
+    }
+}

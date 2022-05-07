@@ -1,0 +1,271 @@
+:root{
+    /*màu nền div trái*/
+    --left-bg-color: #fff;
+    /*màu nền div phải*/
+    --right-bg-color: rgba(199, 191, 191, 0.089);
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+}
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*============================ div tổng ============================*/
+.cartPage-warpper{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 40px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.left-warpper{
+    width: 100%;
+    height: 480px;
+    background-color: var(--left-bg-color);
+    padding: 20px 30px;
+}
+
+.right-warpper{
+    width: 100%;
+    height: 270px;
+    background-color: var(--right-bg-color);
+    padding: 20px 30px;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+th{
+    text-transform: uppercase;
+    color: var(--text-normal-color);
+    font-size: 16px;
+    font-weight: 550;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+.cart-item-1{
+    border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+.cart-item-2{
+    border-bottom: 1px solid rgb(226, 222, 222);
+}
+
+/*============================ xóa sản phẩm ============================*/
+.product-remove{
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*============================ ảnh sản phẩm ============================*/
+.product-thumb{
+    width: 140px;
+    height: 140px;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+}
+
+.product-img img{
+    width: 80%;
+}
+
+/*============================ tên sản phẩm và giá ============================*/
+.product-name,
+.amount{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-normal-color)
+}
+
+/*============================ giá ============================*/
+.product-price{
+    text-align: center;
+}
+
+/*============================ số lượng ============================*/
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="number"]{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 60px;
+}
+
+/*============================ tổng giá ============================*/
+.product-subtotal{
+    text-align: center;
+}
+
+/*============================ cart item update ============================*/
+.cart-item-update{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coupon input[type="text"]{
+    border: none;
+    outline: none;
+    border: 1px solid rgb(224, 215, 215);
+    padding: 12px 20px;
+}
+
+/*nút áp dụng*/
+.coupon button{
+    padding: 12px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+.coupon button:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+/*nút cập nhật giỏ hàng*/
+.cart-update button{
+    padding: 12px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+.cart-update button:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+
+
+/*============================ tổng số giỏ hàng ============================*/
+.cart-totals{
+    width: 100%;
+}
+
+.cart-subtotal,
+.order-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-heading{
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(221, 216, 216);
+    text-transform: uppercase;
+    color: var(--text-normal-color);
+    font-size: 16px;
+    font-weight: 550;
+}
+
+/*tiêu giá giá và tổng giá*/
+.title{
+    color: var(--text-normal-color);
+    font-size: 15px;
+
+}
+.cart-subtotal{
+    padding-top: 20px;
+}
+
+.order-total{
+    padding-top: 15px;
+}
+
+
+.cart-checkout{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+/*nút thanh toán*/
+.cart-checkout button{
+    position: absolute;
+    width: 100%;
+    padding: 12px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+.cart-checkout button:hover{
+    background-color: var(--button-bg-color-hover);
+}

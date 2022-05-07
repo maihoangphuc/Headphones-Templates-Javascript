@@ -1,0 +1,217 @@
+/*pc*/
+@media only screen and (min-width: 1367px) {
+
+}
+
+
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+}
+
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .detail-news-warpper{
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+
+  /*======================= chia sẻ mxh & tác giá ==========================*/
+  .share-author-warpper{
+    align-items: center;
+  }
+
+  .border-related-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    padding: unset;
+    border: unset;
+  }
+
+  .related-news{
+    margin-bottom: 20px;
+  }
+
+  .content-info{
+    font-size: 15px;
+  }
+
+  .content-time{
+    font-size: 13px;
+  }
+
+}
+
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+  /*============================ tiêu đề trang ============================*/
+  .title-page{
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .detail-news-warpper{
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+
+  /*======================= chia sẻ mxh & tác giá ==========================*/
+  .share-author-warpper{
+    align-items: center;
+  }
+
+  .border-related-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    padding: unset;
+    border: unset;
+  }
+
+  .related-news{
+    margin-bottom: 20px;
+  }
+
+  .content-info{
+    font-size: 14px;
+  }
+
+  .content-time{
+    font-size: 13px;
+  }
+
+}
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+  
+  
+  /*============================ tiêu đề trang ============================*/
+  .title-page{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .detail-news-warpper{
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+
+
+  /*======================= chia sẻ mxh & tác giá ==========================*/
+  .share-author-warpper{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .author-warpper{
+    margin-bottom: 20px;
+  }
+
+  .tag-pre-next-warpper{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tag-warpper{
+    margin-top: 10px;
+  }
+
+  .border-related-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    padding: unset;
+    border: unset;
+  }
+
+  .related-news{
+    margin-bottom: 20px;
+  }
+
+  .content-info{
+    font-size: 14px;
+  }
+
+  .content-time{
+    font-size: 12px;
+  }
+
+  .name-rating-warpper{
+    flex-direction: column;
+  }
+
+  .name-email-warpper{
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+
+  /*div chứa tên và icon sao*/
+  .name-rating-reply-warpper{
+    align-items: flex-start;
+  }
+
+}
+
+
+
+/*mobile nhỏ (iphone 6/7/8) trở xuống*/
+@media only screen and (max-width: 376px) {
+
+}
+
+
+/*mobile nhỏ (iphone 5/SE) trở xuống*/
+@media only screen and (max-width: 321px) {
+
+  .tag-warpper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .border-related-news{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    padding: unset;
+    border: unset;
+  }
+
+  /*div chứa tên và icon sao*/
+  .name-rating-reply-warpper{
+    flex-direction: column;
+  }
+
+}
+
+
+/*mobile nhỏ (galaxy Fold) trở xuống*/
+@media only screen and (max-width: 281px) {
+
+  .tag-warpper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .content-tag-warpper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,92 @@
+/*pc*/
+@media only screen and (min-width: 1367px) {
+
+}
+
+
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    .forgot-pass-warpper{
+        width: 50%;
+    }
+
+    .btn-submit button{
+        width: 25%;
+        padding: 9px 17px;
+    }
+
+}
+
+
+
+/*tablets, ipad lớn*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .forgot-pass-warpper{
+        width: 70%;
+    }
+
+    .btn-submit button{
+        width: 25%;
+    }
+
+}
+
+
+
+/*tablets, ipad nhỏ*/
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .forgot-pass-warpper{
+        width: 70%;
+    }
+
+    .btn-submit button{
+        width: 100%;
+    }
+
+}
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 567px) {
+
+    /*============================ tiêu đề trang ============================*/
+    .title-page{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .forgot-pass-warpper{
+        width: 90%;
+    }
+
+    .btn-submit button{
+        width: 100%;
+    }
+
+
+}
+
+
+
+/*mobile nhỏ (iphone 6/7/8) trở xuống*/
+@media only screen and (max-width: 376px) {
+
+}

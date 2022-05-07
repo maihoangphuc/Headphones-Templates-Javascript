@@ -1,0 +1,767 @@
+:root{
+    /*màu thanh trượt*/
+    --slider-runnable-color: rgb(96, 104, 109);
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lọc*/
+    --title-filter-color:rgb(105, 103, 114);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+}
+
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*============================ div cha tổng ============================*/
+.collection-warpper{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    position: relative;
+    margin-top: 50px;
+    position: relative;
+}
+
+/*============================ div trái ============================*/
+.left-warpper{
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
+
+/*============================ tìm kiếm ============================*/
+
+/*tiêu đề tìm kiếm*/
+.left-warpper .left-title{
+    margin-bottom: 10px;
+    color: rgb(114, 122, 129);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search-warpper{
+    position: relative;
+    border: 1px solid #e7e7e7;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+/*input có thuộc tính là search*/
+.search-warpper input[type="search"] {
+    background-color: #f8f9fa;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    position: absolute;
+}
+
+/*icon trong form tìm kiếm*/
+.search-warpper i{
+    background-color: #f8f9fa;
+    right: 0;
+    top:0;
+    margin-top: 10px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: var(--search-i-color);
+    border-left: 1px solid #cecaca;
+    position: absolute;
+}
+
+/*icon trong form tìm kiếm khi hover*/
+.search-warpper i:hover {
+    color:var(--search-hover-i-color);
+}
+
+/*============================ lọc giá ============================*/
+
+/*độ rộng của lọc giá 70%*/
+fieldset {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    border: none;
+}
+
+/*2 thanh trượt*/
+.range-warpper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/*2 thanh trượt gộp lại*/
+.range-warpper input[type=range] {
+    position: absolute;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+/*2 nút tròn*/
+.range-warpper input[type=range]::-webkit-slider-thumb { 
+    position: relative;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin-top: -4px;
+    z-index: 1;
+    background-color: var(--slider-runnable-color);   
+}
+
+/*thanh trượt*/
+.range-warpper input[type=range]::-webkit-slider-runnable-track { 
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background-color: var(--slider-runnable-color);
+}
+  
+/*div tiêu đề lọc và giá trong ô*/
+.price-warpper{
+    display: grid;
+    grid-template-columns: 4fr 4fr 0fr;
+    grid-column-gap: 10px;
+}
+
+.vnd{
+    display: grid;
+    align-content: center;
+}
+
+/*tiêu đề lọc*/
+.filterTitle-warpper{
+    display: grid;
+    align-content: center;
+    cursor: pointer;
+    color: var(--title-filter-color);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.price-1-warpper,
+.price-2-warpper{
+    border: 1px solid #e7e7e7;
+}
+
+.price-warpper input{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    outline: none;
+    border: none;
+}
+
+/*============================ màu sắc ====================================*/
+/*div tổng của màu sắc*/
+.color-warpper{
+    margin-top: 30px;
+}
+
+/*tiêu đề màu sắc*/
+.color-warpper .left-title{
+    margin-bottom: 10px;
+    color: rgb(114, 122, 129);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*div chứa checkbox và label*/
+.checkbox-lable-warpper{
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/*checkbox*/
+.color-warpper .checkbox-lable-warpper .checkbox {
+    display: none;
+}
+
+/*checkbox và label*/
+.color-warpper .checkbox-lable-warpper .checkbox + label{
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/*checkbox và label màu trắng*/
+.color-white .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu đen*/
+.color-black .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(56, 53, 53);
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu hồng*/
+.color-pink .checkbox:nth-child(1) + label:nth-child(2){
+    background: #e3b8e7;
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu xanh da trời*/
+.color-blue .checkbox:nth-child(1) + label:nth-child(2){
+    background: #9bc7e4;
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu xám*/
+.color-gray .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(190, 186, 186);
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu vàng*/
+.color-yellow .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(230, 228, 154);
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu xanh lá*/
+.color-green .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(124, 219, 156);
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu đỏ*/
+.color-red .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(243, 135, 127);
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 10px;
+}
+
+/*checkbox và label màu tím*/
+.color-violet .checkbox:nth-child(1) + label:nth-child(2){
+    background: rgb(181, 136, 224);
+    border: 1px solid rgb(138, 128, 128);
+}
+
+
+
+
+/*thêm icon tick vào sau label của màu trắng*/
+.color-white .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: rgb(99, 86, 86);
+}
+
+/*khi click vào màu trắng*/
+.color-white .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+/*thêm icon tick vào sau label của màu đen*/
+.color-black .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    color: rgb(255, 255, 255);
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+}
+
+/*khi click vào màu đen*/
+.color-black .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility:visible; /*hiện khi click*/
+}
+
+
+/*thêm icon tick vào sau label của màu hồng*/
+.color-pink .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: #fff;
+}
+
+/*khi click vào màu hồng*/
+.color-pink .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility:visible; /*hiện khi click*/
+}
+
+
+/*thêm icon tick vào sau label của màu xanh da trời*/
+.color-blue .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: #fff;
+}
+
+/*khi click vào màu xanh da trời*/
+.color-blue .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+/*thêm icon tick vào sau label của màu xám*/
+.color-gray .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: rgb(255, 255, 255);
+}
+
+/*khi click vào màu xám*/
+.color-gray .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+/*thêm icon tick vào sau label của màu vàng*/
+.color-yellow .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: rgb(95, 85, 85);
+}
+
+/*khi click vào màu vàng*/
+.color-yellow .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+/*thêm icon tick vào sau label của màu xanh lá*/
+.color-green .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: rgb(255, 255, 255);
+}
+
+/*khi click vào màu xanh lá*/
+.color-green .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+/*thêm icon tick vào sau label của màu đỏ*/
+.color-red .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: rgb(255, 255, 255);
+}
+
+/*khi click vào màu đỏ*/
+.color-red .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+/*thêm icon tick vào sau label của màu tím*/
+.color-violet .checkbox:nth-child(1) + label:nth-child(2)::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden; /*ẩn*/
+    color: rgb(255, 255, 255);
+}
+
+/*khi click vào màu tím*/
+.color-violet .checkbox:nth-child(1):checked + label:nth-child(2)::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+/*=========================== danh mục =============================*/
+.category-product-warpper{
+    margin-top: 20px;
+}
+
+/*tiêu đề danh mục*/
+.category-product-warpper .left-title{
+    margin-bottom: 10px;
+    color: rgb(114, 122, 129);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*div chứa checkbox và label*/
+.category-product-warpper .checkbox-lable-warpper{
+    display: flex;
+    align-items: center;
+}
+
+/*checkbox*/
+.category-product-warpper .checkbox-lable-warpper .checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 192, 192);
+    cursor: pointer;
+}
+
+/*label*/
+.category-product-warpper .checkbox-lable-warpper label{
+    font-size: 15px;
+    color: var(--text-normal-color);
+    cursor: pointer;
+}
+
+/*trừ checkbox cuối*/
+.category-product-warpper .checkbox-lable-warpper:not(last-child){
+    margin-bottom: 10px;
+}
+
+/*thêm icon tick vào sau checkbox*/
+.category-product-warpper .checkbox-lable-warpper .checkbox::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+/*checkbox khi click*/
+.category-product-warpper .checkbox-lable-warpper .checkbox:checked::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+/*=========================== thương hiệu =============================*/
+.brand-warpper{
+    margin-top: 20px;
+}
+
+/*tiêu đề thương hiệu*/
+.brand-warpper .left-title{
+    margin-bottom: 10px;
+    color: rgb(114, 122, 129);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*div chứa checkbox và label*/
+.brand-warpper .checkbox-lable-warpper{
+    display: flex;
+    align-items: center;
+}
+
+/*checkbox*/
+.brand-warpper .checkbox-lable-warpper .checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 192, 192);
+    cursor: pointer;
+}
+
+
+/*trừ checkbox cuối*/
+.brand-warpper .checkbox-lable-warpper:not(last-child){
+    margin-bottom: 10px;
+}
+
+/*label*/
+.brand-warpper .checkbox-lable-warpper label{
+    font-size: 15px;
+    color: var(--text-normal-color);
+    cursor: pointer;
+}
+
+/*thêm icon tick vào sau checkbox*/
+.brand-warpper .checkbox-lable-warpper .checkbox::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+/*checkbox khi click*/
+.brand-warpper .checkbox-lable-warpper .checkbox:checked::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+
+/*=========================== loại sản phẩm =============================*/
+.type-product-warpper{
+    margin-top: 20px;
+}
+
+/*tiêu đề loại sản phẩm*/
+.type-product-warpper .left-title{
+    margin-bottom: 10px;
+    color: rgb(114, 122, 129);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*div chứa checkbox và label*/
+.type-product-warpper .checkbox-lable-warpper{
+    display: flex;
+    align-items: center;
+}
+
+/*checkbox*/
+.type-product-warpper .checkbox-lable-warpper .checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 192, 192);
+    cursor: pointer;
+}
+
+/*label*/
+.type-product-warpper .checkbox-lable-warpper label{
+    font-size: 15px;
+    color: var(--text-normal-color);
+    cursor: pointer;
+}
+
+/*trừ checkbox cuối*/
+.type-product-warpper .checkbox-lable-warpper:not(last-child){
+    margin-bottom: 10px;
+}
+
+/*thêm icon tick vào sau checkbox*/
+.type-product-warpper .checkbox-lable-warpper .checkbox::after{
+    content: '\f00c';
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    position: absolute;
+    font-family: "FontAwesome";
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+/*checkbox khi click*/
+.type-product-warpper .checkbox-lable-warpper .checkbox:checked::after{
+    visibility: visible; /*hiện khi click*/
+}
+
+/*============================ nút lọc ===============================*/
+.button-filter-warpper{
+    margin-top: 30px;
+}
+
+.button-filter-warpper button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e2d4d4;;
+    color: rgb(114, 122, 129);
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-filter-warpper button:hover{
+    background-color: var(--button-bg-color-hover);
+    color: #fff;
+}
+
+.button-filter-warpper button::after{
+    content: '\f0b0';
+    font-family: "FontAwesome";
+    margin-left: 10px;
+}
+
+
+/*============================ div phải bên trên ============================*/
+.right-warpper-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/*============================ select ============================*/
+
+/*div cha chọn kiểu hiển thị giá*/
+.selectShowPrice-warpper{
+    border: 1px solid #e7e7e7;
+}
+
+/*thẻ select*/
+select{
+    color: #746161;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+option {
+    color: #746161;
+}
+
+/*============================ thông tin hiển thị sp ============================*/
+.textShow-results{
+    margin-right: 200px; /*di chuyển chữ hiển thị sp qua (bên trái 330px)*/
+    font-size: 15px;
+    color: rgb(121, 120, 136);
+}
+
+
+/*============================ chọn kiểu hiển thị sp ============================*/
+
+/*di chuyển icon đầu tiên qua bên trái 5px*/
+.iconShowProduct-warpper i:first-child{
+    margin-right: 5px;
+}
+
+/*chỉnh 2 icon*/
+.iconShowProduct-warpper i{
+    color: rgb(118, 138, 151);
+    cursor: pointer;
+}
+
+/*============================ div chứa sản phẩm ============================*/
+.product-warpper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+/*============================ xem thêm sản phẩm ============================*/
+
+.see-more-product-warpper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.see-more-product-warpper button{
+    border: none;
+    outline: none;
+    padding: 12px 50px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    border: 1px solid #e2d4d4;
+    color: rgb(114, 122, 129);
+}
+
+.see-more-product-warpper button:hover{
+    background-color: var(--button-bg-color-hover);
+    color: #fff;
+}
+
+.see-more-product-warpper button::after{
+    content: '\f0d7';
+    font-family: "FontAwesome";
+    margin-left: 10px;
+}

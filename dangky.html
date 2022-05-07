@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="shortcut icon" type="image/png" href="./images/logo/icon-logo.png"/>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/style/header.css">
+    <link rel="stylesheet" href="./css/responsive/header-res.css">
+    <!-- css footer -->
+    <link rel="stylesheet" href="./css/style/footer.css">
+    <link rel="stylesheet" href="./css/responsive/footer-res.css">
+    <!-- css đăng ký -->
+    <link rel="stylesheet" href="./css/style/dangky.css">
+    <link rel="stylesheet" href="./css/responsive/dangky-res.css">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/f6666f8125.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ============= header ============= -->
+    <header>
+        <div class="load-html" data-source="header.html"></div>
+    </header>
+    <!-- ============= end header ============= -->
+    
+
+    <!-- ============= main ============= -->
+    <main>
+        
+        <!-- ============= đánh dấu trang ============= -->
+        <div class="breadcrumb container-80">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li>Đăng Ký</li>
+            </ul>
+        </div>
+        <!-- ============= kết thúc đánh dấu trang ============= -->
+
+        <!-- ============= đường viền dưới đánh dấu trang ============= -->
+        <div class="border-bottom-breadcrumb container-80"></div>
+        <!-- ============= kết thúc đường viền dưới đánh dấu trang ============= -->
+
+        <!-- ============= tiêu đề trang ============= -->
+        <div class="title-page container-80">
+            <p>Đăng Ký</p>
+        </div>
+        <!-- ============= kết thúc tiêu đề trang ============= -->
+
+        <!-- ============= form đăng ký ============= -->
+        <form action="dangnhap.html">
+
+            <!-- signup warpper -->
+            <div class="signup-warpper">
+
+                <!-- tiêu đề đăng ký -->
+                <div class="signup-title">
+                    <p>Đăng Ký Ngay</p>
+                </div>
+                <!-- kết thúc tiêu đề đăng ký -->
+                
+                <!-- phần trên -->
+                <div class="signup-top">
+                    <div class="signup">
+                        <label for="fisrt-name">Họ</label>
+                        <input type="text" placeholder="Nhập họ">
+                    </div>
+                    
+                    <div class="signup">
+                        <label for="name">Tên</label>
+                        <input type="text" placeholder="Nhập tên">
+                    </div>
+                </div>
+                <!-- kết thúc phần trên -->
+
+                <!-- phần giữa -->
+                <div class="signup-mid">
+                    <div class="signup">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Nhập email">
+                    </div>
+                    <div class="signup">
+                        <label for="phone">Số Điện Thoại</label>
+                        <input class="form-control" type="tel" placeholder="Nhập số điện thoại">
+                    </div> 
+                </div>
+                <!-- kết thúc phần giữa -->
+
+                <!-- phần dưới -->
+                <div class="signup-bottom">
+                    <div class="signup">
+                        <label for="pass">Mật Khẩu</label>
+                        <input type="password" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="signup">
+                        <label for="re-pass">Nhập Lại Mật Khẩu</label>
+                        <input type="password" placeholder="Nhập lại mật khẩu">
+                    </div> 
+                </div>
+                <!-- kết thúc phần dưới -->
+               
+                <!-- đường viền dưới -->
+                <div class="border-bottom-signup"></div>
+                <!-- kết thúc đường viền dưới -->
+
+                <!-- quay lại đăng nhập & nút đăng ký -->
+                <div class="signin-btnSignup">
+                    <div class="back-signin">
+                        <a href="dangnhap.html">
+                            <p> Đăng Nhập</p>
+                        </a>
+                    </div>
+
+                    <div class="btn-signup">
+                        <button>Đăng Ký</button>
+                    </div>
+                </div>
+                <!-- kết thúc quay lại đăng nhập & nút đăng ký -->
+
+            </div>
+            <!-- end signup warpper -->
+        </form>
+        <!-- ============= kết thúc form đăng ký ============= -->
+
+    </main>
+    <!-- ============= end main ============= -->
+
+    <!-- ============= footer ============= -->
+    <footer>
+        <div class="load-html" data-source="footer.html"></div>
+    </footer>
+    <!-- ============= end footer ============= -->
+    
+    <!-- src js -->
+    <script src="./js/load-index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,260 @@
+
+:root {
+    /*bg color*/
+    --bg-footer-color: #272b36;
+    /*border bottom footer*/
+    --border-bottom-footer-color:rgba(255,255,255,0.2);
+    /*footer*/
+    --info-i-color:rgb(231, 216, 216);
+    --container-footer-h2-color:rgb(231, 216, 216);
+    --container-footer-p-color:rgb(126, 124, 131);
+    --quicklinks-li-color:rgb(126, 124, 131);
+    --quicklinks-hover-li-color:rgba(128, 161, 223, 0.753);
+    --coppyright-color:rgb(114, 109, 109);
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+}
+
+
+/*================== chân trang ==================*/
+footer{
+    height: auto;
+    margin-top: 50px;
+    background-color: var(--bg-footer-color);
+    padding: 30px 0px ;
+}
+
+footer .footer-warpper{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer .sec h2{
+    position: relative;
+    color: var(--container-footer-h2-color);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer .sec p{
+    color: var(--container-footer-p-color);
+    font-size: 16px;
+}
+
+footer .sec h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    top: 35px;
+    background-color: rgb(141, 174, 236);
+}
+
+/*mạng xã hội dưới chân trang*/
+.sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,40px);
+    grid-gap: 10px;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: rgb(78, 85, 107);
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.sci li:hover a{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.sci .fb:hover a{
+    background-color: rgb(21, 70, 175);
+}
+
+.sci .ytb:hover a{
+    background-color: rgb(228, 4, 4);
+}
+
+.sci .tw:hover a{
+    background-color: rgb(83, 201, 113);
+}
+
+.sci .ins:hover a{
+    background-color: rgb(207, 71, 155);
+}
+
+/*quicklinks*/
+.quicklinks{
+    position: relative;
+    font-size: 16px;
+}
+
+.quicklinks li{
+    color: var(--quicklinks-li-color)
+}
+
+.quicklinks li a:hover{
+    color: var(--quicklinks-hover-li-color);
+}
+
+/*info*/
+.info{
+    position: relative;
+}
+
+.info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.info i{
+    color: var(--info-i-color)
+}
+
+/*================== đường viền dưới chân trang ==================*/
+.border-bottom-footer{
+    margin-top: 20px;
+    border-bottom: 1px solid var(--border-bottom-footer-color); 
+}
+
+/*================== bản quyền ==================*/
+.coppyright{
+    color: var(--coppyright-color);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/*================== lên trên cùng ==================*/
+#gototop {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--button-bg-color);
+    text-align: center;
+    padding-top: 18px;
+    z-index: 9;
+    text-transform: uppercase;
+    position: fixed;
+    right: 20px;
+    bottom: 45px;
+}
+
+#gototop:before {
+    content: "\f102";
+    font-family: FontAwesome;
+    font-size: 22px;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    color: #fff;
+}
+
+#gototop:hover{
+    background-color:var(--button-bg-color-hover);
+}
+
+/*================== liên hệ nhanh ==================*/
+/*vị trí all-btn*/
+.all-btn{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 999;
+    position: fixed;
+}
+
+/*style thẻ span*/
+.all-btn span{
+    width: 45px;
+    height: 45px;
+    background-color: var(--button-bg-color);
+    line-height: 50px;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.all-btn a span{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#icon-plus:hover {
+    background-color: var(--button-bg-color-hover);
+}
+
+#click:checked ~ .all-btn a span{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 23px;
+    z-index: 1;
+    opacity: 1;
+}
+
+#click:checked ~ .all-btn a:nth-child(2) span,
+#click:checked ~ .all-btn a:nth-child(3) span,
+#click:checked ~ .all-btn a:nth-child(4) span{
+    color: #fff;
+    background-color: rgb(78, 85, 107);
+}
+
+#click:checked ~ .all-btn a:nth-child(2) span{
+    bottom: 50px;
+    left: 0px;
+}
+
+#click:checked ~ .all-btn a:nth-child(3) span{
+    bottom: 105px;
+    left: 0px;
+}
+
+.all-btn a:nth-child(3) span{
+    transition-delay: 0.2s;
+}
+
+#click:checked ~ .all-btn a:nth-child(4) span{
+    bottom: 160px;
+    left: 0px;
+}
+
+.all-btn a:nth-child(4) span{
+    transition-delay: 0.4s;
+}
+
+#click{
+    display: none;
+}
+
+
+
+
+
+

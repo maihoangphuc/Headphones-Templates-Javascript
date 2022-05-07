@@ -1,0 +1,363 @@
+:root{
+    /*màu nền ckeckout warpper*/
+    --checkout-warpper-color:#fff;
+    /*màu nền button*/
+    --button-bg-color: rgb(59, 70, 94);
+    /*màu nền button khi hover*/
+    --button-bg-color-hover: rgb(74, 80, 104);
+    /*màu chữ lớn*/
+    --text-big-color:rgb(95, 105, 110);
+    /*màu chữ thường*/
+    --text-normal-color:#858fa0;
+    /*màu tiêu đề*/
+    --text-title:rgb(141, 152, 158);
+}
+
+/*============================ đánh dấu trang ============================*/
+
+/*div cha*/
+.breadcrumb {
+    margin-top: 20px;
+}
+
+/*cho li lên cùng 1 hàng*/
+.breadcrumb ul li {
+    display: inline;
+    font-size: 15px;
+}
+
+/*ở phía sau của li đầu tiên*/
+.breadcrumb li:first-child::after {
+    color: #b6af96;
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*li đầu tiên*/
+.breadcrumb li:first-child {
+    color: #999999;
+}
+
+/*li cuối cùng*/
+.breadcrumb li:last-child {
+    color: #5a5a5a;
+}
+
+/*============================ đường viền dưới đánh dấu trang ============================*/
+.border-bottom-breadcrumb{
+    border-bottom: 1px solid #e0dcdc;
+    margin-top: 5px;
+}
+
+/*============================ tiêu đề trang web ============================*/
+.title-page{
+    font-weight: 600;
+    font-size: 26px;
+    color: rgb(167, 175, 180);
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*============================ div chứa left và right ============================*/
+.checkout-warpper{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    margin-top: 50px;
+    background-color: var(--checkout-warpper-color);
+}
+
+/*============================ div trái ============================*/
+.left-warpper{
+    padding: 40px;
+}
+
+/*============================ tiêu đề trái ============================*/
+.left-title,
+.right-title{
+    color: var(--text-title);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/*============================ div chứa 2 input họ và tên ============================*/
+.firstname-lastname-warpper{
+    display: grid; /*đưa 2 input top lên cùng 1 hàng và sang trái và phải*/
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+/*div chứa họ, div chứa tên*/
+.lastname-warpper,
+.firstname-warpper{
+    display: flex; /*xuống thành hàng dọc*/
+    flex-direction: column;
+}
+
+/*============================ div chứa inpput tên công ty ============================*/
+.company-warpper{
+    display: flex;
+    flex-direction: column; /*thành hàng dọc*/
+    margin-top: 20px;
+}
+
+/*============================ div chứa select quốc gia ============================*/
+.country-warpper{
+    display: flex;
+    flex-direction: column; /*thành hàng dọc*/
+    margin-top: 20px;
+}
+
+/*============================ div chứa select tỉnh ============================*/
+.province-warpper{
+    display: flex;
+    flex-direction: column; /*thành hàng dọc*/
+    margin-top: 20px;
+}
+
+/*============================ div chứa input thành phố ============================*/
+.city-warpper{
+    display: flex;
+    flex-direction: column; /*thành hàng dọc*/
+    margin-top: 20px;
+}
+
+/*============================ div chứa 2 input thôn và mã zip ============================*/
+.village-zip-warpper{
+    display: grid; /*đưa 2 input top lên cùng 1 hàng và sang trái và phải*/
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-top: 20px;
+}
+
+/*div chứa input thôn, div chứa input mã zip*/
+.village-warpper,
+.zip-warpper{
+    display: flex; /*xuống thành hàng dọc*/
+    flex-direction: column;
+}
+
+/*============================ div chứa 2 input số điện thoại và email ============================*/
+.phone-email-warpper{
+    display: grid; /*đưa 2 input top lên cùng 1 hàng và sang trái và phải*/
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*div chứa input sdt, div chứa input email*/
+.phone-warpper,
+.email-warpper{
+    display: flex; /*xuống thành hàng dọc*/
+    flex-direction: column;
+}
+
+/*============================ div chứa textarea ghi chú ============================*/
+.note-warpper{
+    display: flex;
+    flex-direction: column; /*thành hàng dọc*/
+    margin-top: 20px;
+}
+
+.label{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: var(--text-normal-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+}
+
+
+select{
+    cursor: pointer;
+    color: rgb(110, 115, 126);
+}
+
+option{
+    font-size: 14px;
+}
+
+textarea{
+    overflow: auto;
+    resize: vertical; /*kích thước theo chiều dọc*/
+    height: inherit !important; /*kế thừa theo chiều cao*/
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*============================ div phải ============================*/
+.right-warpper{
+    padding: 40px;
+}
+
+.order-warpper{
+    background-color: rgba(199, 191, 191, 0.089);
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.product-price-warpper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.border-bottom-order{
+    border-bottom: 1px solid #e7e7e7;;
+}
+
+.productName-priceNumber-warpper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shipping-freeShipping-warpper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.priceTotal-priceNumberTotal-warpper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-order{
+    color: #fff;
+    background-color: var(--button-bg-color);
+
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 15px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-order:hover{
+    background-color: var(--button-bg-color-hover);
+}
+
+.product-price-warpper,
+.priceTotal-priceNumberTotal-warpper{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-normal-color);
+}
+
+.productName-priceNumber-warpper,
+.shipping-freeShipping-warpper{
+    font-size: 14px;
+    color: var(--text-normal-color);
+}
+
+
+               
+/*================================= div modal ================================*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    padding-top: 170px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/*nội dung modal*/
+.modal-content {
+    width: 50%;
+    height: 450px;
+    padding: 5px 20px;
+    margin: 0 auto;
+    background-color: #fefefe;
+    border: 1px solid #888;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+.img-order-success{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img-order-success img{
+    width: 100px;
+}
+
+.title-success-warpper{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-success-1{
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.title-success-2{
+    margin-top: 20px;
+}
+
+.title-success-4{
+    margin-top: 10px;
+}
+
+.button-order-detail{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-order-detail button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: var(--button-bg-color);
+    color: #fff;
+}
+
+.button-order-detail button:hover{
+    background-color: var(--button-bg-color-hover);
+}
